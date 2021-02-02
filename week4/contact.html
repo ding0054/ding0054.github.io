@@ -28,11 +28,40 @@
     <!--**************main******************-->
     <main>
         <h2>Contact Us</h2>
+
+
+        <table>
+            <caption>Hours of Operation</caption>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mon - Fri</td>
+                    <td>6 AM - 9PM</td>
+                </tr>
+
+                <tr>
+                    <td>Sat</td>
+                    <td>8 AM - 11PM</td>
+                </tr>
+
+                <tr>
+                    <td>Sun</td>
+                    <td>Colsed</td>
+                </tr>
+            </tbody>
+
+        </table>
+
         <section>
             <h3>We love to hear from you</h3>
             <form action="thanks.html" method="get">
                 <div>
-                    <label for="fullname">Your Name</label>  
+                    <label for="fullname">Your Name</label>
                     <input type="text" id="fullname" name="fullname" placeholder="John Doe" value="Mr.">
                 </div>
 
@@ -43,7 +72,7 @@
 
                 <div>
                     <label for="message">Message</label>
-                    <textarea name="message" id="message"></textarea> 
+                    <textarea name="message" id="message"></textarea>
                 </div>
 
                 <div>
@@ -60,6 +89,20 @@
                     </select>
                 </div>
 
+                <div>
+                    <h3>Have you been here before?</h3>
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="past" id="yes" checked>
+
+                    <label for="no">No</label>
+                    <input type="radio" name="past" id="no">
+                </div>
+
+                <div>
+                    <h3>Policies</h3>
+                    <input type="checkbox" name="policies" id="policies">
+                    <label for="policies">I agree with the Terms and Policies</label>  
+                </div>
                 <button type="submit">Sign me up!</button>
 
             </form>
