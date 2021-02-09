@@ -1,0 +1,100 @@
+body{
+    color:darkslategray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: white;
+}
+
+p{
+    background-color: lightblue;
+}
+
+/*Selecting multiple elements to apply same styles*/
+h1,
+h2,
+h3,
+h4{
+    text-decoration: underline;
+}
+
+nav ul a {
+list-style: none;
+}
+
+/* class name seletor */
+.orange-link{
+    background-color: darkslategray;
+    color: orange;
+    text-decoration: none;
+}
+
+/* id selector */
+#treatofweek{
+background-color: orange;
+}
+
+/* Avoid using id for stying, use classes mostly */
+.large-text{
+    font-size: 20px;
+}
+
+/* Childn selector or Direct child selector */
+article>p {
+    font-size: 24px;
+}
+
+/* Adiacent sibling selector */
+h3+ul {
+    /* thinkness style color */
+    border: 1px solid black;
+}
+
+a[herf="#treatofweek"]{
+    font-weight: bold;
+}
+
+[title*="Execute"]{
+    background-color: yellow;
+}
+
+/* 
+ Using Pseudo Classes Style Navigation 
+*/
+
+/* Love hate*/
+nav ul a,
+nav ul a:link,
+nav ul a:visited{
+    background-color: orange;
+    /* horizontal vertical blur spread color */
+    box-shadow: -2px 2px 4px 2px black;
+}
+
+nav ul a:hover,
+nav ul a:focus{
+    text-decoration: underline;
+}
+
+nav ul a:active{
+    /* horizontal vertical blur spread color */
+    box-shadow: 0 0 4px 2px black;
+}
+
+/* Position related Pasudo class selectors */
+aside ul li:first-child {
+    font-weight: bold;
+}
+
+section ol li:last-child {
+    font-weight: bold;
+}
+
+/* dl ul li:nth-child(5){
+    background-color: white;
+} */
+
+dl ul li:nth-child(even){
+    background-color: white;
+}
