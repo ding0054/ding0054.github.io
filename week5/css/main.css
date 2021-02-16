@@ -5,8 +5,10 @@ body{
 
 h1{
     color: white;
+    
 }
 
+/* Specificity: 0001*/
 p{
     background-color: lightblue;
 }
@@ -19,11 +21,18 @@ h4{
     text-decoration: underline;
 }
 
-nav ul a {
+/* Specificity: 0002*/
+nav ul {
 list-style: none;
 }
 
+nav ul a{
+    color: darkslategray;
+    text-decoration: none;
+    }
+
 /* class name seletor */
+/* Specificity: 0010*/
 .orange-link{
     background-color: darkslategray;
     color: orange;
@@ -31,6 +40,7 @@ list-style: none;
 }
 
 /* id selector */
+/* Specificity: 0100*/
 #treatofweek{
 background-color: orange;
 }
@@ -95,6 +105,17 @@ section ol li:last-child {
     background-color: white;
 } */
 
-dl ul li:nth-child(even){
+/* dl ul li:nth-child(even){
+    background-color: white;
+} */
+dl ul li:nth-child(2n+1){
     background-color: white;
 }
+
+/* CSS Specificity */
+
+/* Specificity 0002 */
+body footer{
+    background-color: rgb(0, 0, 0);
+}
+
