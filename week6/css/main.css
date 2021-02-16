@@ -1,6 +1,10 @@
 body{
     color:darkslategray;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../images/white_brick_wall.png);
+
+    /* background-repeat: no-repeat;
+    background: position 100px 200px; */
 }
 
 h1{
@@ -42,7 +46,20 @@ nav ul a{
 /* id selector */
 /* Specificity: 0100*/
 #treatofweek{
-background-color: orange;
+/* background-color: orange; */
+/* color image repeat */
+background: darkslategray url("../images/bread.jpg") no-repeat center 
+center;
+background-size: cover;
+color:#fff;
+font-size: 24px;
+padding: 20px;
+
+}
+
+/* overwriting the background color for nth-child list items */
+#treatofweek dl ul li:nth-child(n){
+    background-color: transparent;
 }
 
 /* Avoid using id for stying, use classes mostly */
