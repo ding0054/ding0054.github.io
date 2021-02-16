@@ -1,107 +1,98 @@
+/*Selecting multiple elements to apply same styles*/
 header,
-footer{
+footer {
     background-color: lightcoral;
     font-style: inherit;
-    font-size: 24px;
+    font-size: 22px;
 }
 
-body{
-    color:darkslategray;
+body {
+    color: darkslategray;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
 
-/* h1{
-    color: white;
-} */
-
-/* p{
-    background-color: lightblue;
-} */
-
-/*Selecting multiple elements to apply same styles*/
-
-h3{
+h3 {
     text-decoration: underline;
-} 
-
-/* nav ul a {
-list-style:square;
-} */
+}
 
 /* class name seletor */
-.site-title{
+.site-title {
     background-color: darkslategray;
     color: orange;
     text-decoration: none;
+    font-size: 30px;
+}
+
+.sk{
+    list-style: none;
+}
+
+.dr{
+    list-style: none;
+}
+
+.skating{
+    font-style:italic;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.drawing{
+    font-style:italic;
+    font-weight: bold;
+    font-size: 22px;  
 }
 
 /* id selector */
-#my-image{
+#my-image {
     box-shadow: 0 0 2px 1px black;
     width: 200px;
     height: 330px;
 }
 
-#skating{
+#skating {
     width: 530px;
     height: 300px;
 }
 
-#drawing{
+#drawing {
     width: 500px;
-    height: 300px; 
+    height: 300px;
 }
 
-#checkedimage{
+#checkedimage {
     width: 700px;
     height: 500px;
 }
-
-/* Avoid using id for stying, use classes mostly */
-/* .large-text{
-    font-size: 20px;
-} */
 
 /* Childn selector or Direct child selector */
 article>p {
     font-size: 24px;
 }
+
 ul {
     list-style: square;
 }
 
-a:link{
+a:link {
     font-weight: bold;
     font-size: 24px;
     text-decoration: none;
 }
 
 a:hover,
-a:focus{
-    background-color: lightseagreen;
+a:focus {
+    background-color: rgb(24, 87, 84);
     text-decoration: underline;
 }
 
-a:active{
+a:active {
     /* horizontal vertical blur spread color */
     box-shadow: 0 0 4px 2px black;
     text-decoration: underline;
 }
 
-/* Position related Pasudo class selectors */
-aside ul li:first-child {
-    font-weight: bold;
-}
-
-section ol li:last-child {
-    font-weight: bold;
-}
-
-/* dl ul li:nth-child(5){
-    background-color: white;
-} */
-
-ul li:nth-child(odd){
-    background-color:lightsalmon;  
+ul li:nth-child(odd) {
+    background-color: lightsalmon;
 }
