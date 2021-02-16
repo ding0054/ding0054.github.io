@@ -1,86 +1,92 @@
+header,
+footer{
+    background-color: lightcoral;
+    font-style: inherit;
+    font-size: 24px;
+}
+
 body{
     color:darkslategray;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
 
-h1{
+/* h1{
     color: white;
-}
+} */
 
-p{
+/* p{
     background-color: lightblue;
-}
+} */
 
 /*Selecting multiple elements to apply same styles*/
-h1,
-h2,
-h3,
-h4{
-    text-decoration: underline;
-}
 
-nav ul a {
-list-style: none;
-}
+h3{
+    text-decoration: underline;
+} 
+
+/* nav ul a {
+list-style:square;
+} */
 
 /* class name seletor */
-.orange-link{
+.site-title{
     background-color: darkslategray;
     color: orange;
     text-decoration: none;
 }
 
 /* id selector */
-#treatofweek{
-background-color: orange;
+#my-image{
+    box-shadow: 0 0 2px 1px black;
+    width: 200px;
+    height: 330px;
+}
+
+#skating{
+    width: 530px;
+    height: 300px;
+}
+
+#drawing{
+    width: 500px;
+    height: 300px; 
+}
+
+#checkedimage{
+    width: 700px;
+    height: 500px;
 }
 
 /* Avoid using id for stying, use classes mostly */
-.large-text{
+/* .large-text{
     font-size: 20px;
-}
+} */
 
 /* Childn selector or Direct child selector */
 article>p {
     font-size: 24px;
 }
-
-/* Adiacent sibling selector */
-h3+ul {
-    /* thinkness style color */
-    border: 1px solid black;
+ul {
+    list-style: square;
 }
 
-a[herf="#treatofweek"]{
+a:link{
     font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
 }
 
-[title*="Execute"]{
-    background-color: yellow;
-}
-
-/* 
- Using Pseudo Classes Style Navigation 
-*/
-
-/* Love hate*/
-nav ul a,
-nav ul a:link,
-nav ul a:visited{
-    background-color: orange;
-    /* horizontal vertical blur spread color */
-    box-shadow: -2px 2px 4px 2px black;
-}
-
-nav ul a:hover,
-nav ul a:focus{
+a:hover,
+a:focus{
+    background-color: lightseagreen;
     text-decoration: underline;
 }
 
-nav ul a:active{
+a:active{
     /* horizontal vertical blur spread color */
     box-shadow: 0 0 4px 2px black;
+    text-decoration: underline;
 }
 
 /* Position related Pasudo class selectors */
@@ -96,6 +102,6 @@ section ol li:last-child {
     background-color: white;
 } */
 
-dl ul li:nth-child(even){
-    background-color: white;
+ul li:nth-child(odd){
+    background-color:lightsalmon;  
 }
