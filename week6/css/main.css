@@ -1,3 +1,8 @@
+
+ html{
+    font-size: 16px;
+} 
+
 body{
     color:darkslategray;
     font-family: Arial, Helvetica, sans-serif;
@@ -33,6 +38,8 @@ list-style: none;
 nav ul a{
     color: darkslategray;
     text-decoration: none;
+    font-size: 1.5rem;
+    /* 1.5 x 16px = 24px */
     }
 
 /* class name seletor */
@@ -52,9 +59,9 @@ background: darkslategray url("../images/bread.jpg") no-repeat center
 center;
 background-size: cover;
 color:#fff;
-font-size: 24px;
-padding: 20px;
-
+font-size: 1.5rem;
+padding: 1em;
+width: 50%;
 }
 
 /* overwriting the background color for nth-child list items */
@@ -143,4 +150,5 @@ dl ul li:nth-child(2n+1){
 body footer{
     background-color: rgb(0, 0, 0);
 }
+
 
