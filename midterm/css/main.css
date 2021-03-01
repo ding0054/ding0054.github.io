@@ -1,0 +1,238 @@
+html {
+    font-size: 16px;
+}
+
+body{
+    color: darkslategray;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../images/white_brick_wall.png);
+
+    /* background-repeat: no-repeat;
+       x-axis y-axis
+    background-position 100px 200px; 
+    background-size: cover;*/
+}
+
+
+body{
+    /* color: red; */
+    padding-top: 80px;
+}
+
+h1 {
+    color: white;
+
+}
+
+img{
+    width: 100%;
+}
+
+/* Specificity: 0001*/
+p {
+    background-color: lightblue;
+}
+
+/*Selecting multiple elements to apply same styles*/
+h1,
+h2,
+h3,
+h4 {
+    text-decoration: underline;
+}
+
+/* descendant selector */
+/* Specificity: 0002*/
+nav ul {
+    list-style: none;
+}
+
+/* Ex 1-didsplay and box sizing */
+nav ul li {
+    display: inline-block;
+    width: 49%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+/* decendant selector - multiple levels */
+nav ul a {
+    display: block;
+    color: darkslategray;
+    text-decoration: none;
+    /* rem is root element's(html tag) font size */
+    font-size: 1.5rem;
+    /* 1.5 x 16px = 24px */
+}
+
+/* class name seletor */
+/* Specificity: 0010*/
+.orange-link {
+    padding: 1.5em;
+    display: inline-block;
+    width: 300px;
+    background-color: darkslategray;
+    color: orange;
+    text-decoration: none;
+
+}
+
+/* float */
+article,
+aside {
+    width: 80%;
+    background-color: rgb(255, 255, 255, 0.6);
+    border: 1px solid black;
+    padding: 1.5em;
+    box-sizing: border-box;
+    float: left;
+}
+
+aside {
+    width: 20%;
+}
+
+ /* clearing the float */
+.clearfix：after{
+    content: "";
+    clear: both;
+    display:table;
+}
+
+section {
+    /* clearing the float */
+    clear: both;
+}
+
+
+.orange-link.large-text{
+    position:absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+/* id selector */
+/* Specificity: 0100*/
+#treatofweek {
+    position: relative;
+    /* background-color: orange; */
+    /* color image repeat */
+    background: darkslategray url("../images/bread.jpg") no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    font-size: 1.5rem;
+    /* 1.5 x 16px = 24px */
+    /* em is for element's font size */
+    /* 4 padding values - top right bottom left */
+    padding: 1em 1em 3em 1em;
+    /* 1 x 1.5rem = 1 x 1.5 x 16px = 24px */
+    width: 50%;
+}
+
+/* overwriting the background color for nth-child list items */
+#treatofweek dl ul li:nth-child(n) {
+    background-color: transparent;
+}
+
+/* Avoid using id for stying, use classes mostly */
+.large-text {
+    font-size: 20px;
+}
+
+/* Childn selector or Direct child selector */
+article>p {
+    /* Typography Properties */
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: lowercase;
+    text-align: center;
+    /* word-spacing: 2px; */
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+/* Adiacent sibling selector */
+h3+ul {
+    /* thinkness style color */
+    border: 1px solid black;
+}
+
+a[herf="#treatofweek"] {
+    font-weight: bold;
+}
+
+[title*="Execute"] {
+    background-color: yellow;
+}
+
+/* 
+ Using Pseudo Classes Style Navigation 
+*/
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.8);
+    z-index: 999;
+}
+
+/* Love hate*/
+nav ul a,
+nav ul a:link,
+nav ul a:visited {
+    background-color: orange;
+    /* horizontal vertical blur spread color */
+    box-shadow: -2px 2px 4px 2px black;
+}
+
+nav ul a:hover,
+nav ul a:focus {
+    text-decoration: underline;
+}
+
+nav ul a:active {
+    /* horizontal vertical blur spread color */
+    box-shadow: 0 0 4px 2px black;
+}
+
+/* Position related Pasudo class selectors */
+aside ul li:first-child {
+    font-weight: bold;
+}
+
+section ol li:last-child {
+    font-weight: bold;
+}
+
+/* dl ul li:nth-child(5){
+    background-color: white;
+} */
+
+/* dl ul li:nth-child(even){
+    background-color: white;
+} */
+dl ul li:nth-child(2n+1) {
+    background-color: white;
+}
+
+/* CSS Specificity */
+  /* specificity: 0002 */
+  body footer {
+    background-color: rgb(0, 0, 0);
+  }
+  /* specificity: 0001 */
+  footer {
+    background-color: #d5836c;
+    padding: 20px;
+  }
+  /* specificity: 0010 */
+  .site-footer {
+    background-color: cornflowerblue;
+  }
+  /* specificity: 0011 */
+  footer.site-footer {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
