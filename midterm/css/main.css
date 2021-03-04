@@ -49,7 +49,7 @@ table {
 /* ********************************Our own style************************************** */
 
 .container{
-	width: 900px;
+	width: 70%;
 	/* Center Container */
 	margin: 0 auto;
 	background-color: #aad4cf;
@@ -58,53 +58,134 @@ table {
 	/* border: 6px solid; */
   }
 
+  html body{
+	  height: 100%;
+  }
+
 body{
+	height:auto !important; 
     background-color:lightcyan;
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+	display: flex;
+    flex-direction: column;
 }
 
 header{
-    color:#ffff;
+    color:rgb(255, 255, 255);
 	font-size: 3rem;
     text-align: center;
     background: url("../images/lone-starfish-wide.jpg") no-repeat center center;
     background-size: cover;
     padding: 1em 1em 1em 1em;
+	padding-top: 10%;
 }
 
-nav ul li {
+nav ul li{
     display: inline-block;
     width: 31%;
-    padding: 1em;
+    padding-right: 12%;
+	padding-top: 1rem;
+	padding-left: 12%;
     box-sizing: border-box;
 }
 
-ul li {
-    display: block;
-    width: 49%;
-    padding: 1em;
-    box-sizing: border-box;
+a:link, a:visited{
+	display: inline-block;
+	text-decoration: none;
+	color: black;
 }
 
-nav ul {
-    list-style: none;
+.li-1,
+.li-2, 
+.li-3, 
+.li-4{
+	margin-left:5%;
+	width: 100%;
+	padding-left: 0rem;
+	list-style: disc;
 }
-
 
 h2,
-h3,
-h4 {
+h3{
+	padding-top: 1em;
+	padding-left: 0.5rem;
+	padding-bottom: 0.5rem;
     text-decoration: none;
-	font-size: 1.5rem;
+	font-size: 1.8rem;
+	font-weight: 0.9rem;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+p {
+	padding-left: 0.5rem;
 }
 
 .starfishimg{
 	float: left;
-    width: 350px;
-    height: 350px;
-    margin-right: 30px;
+    width: 250px;
+    height: 250px;
+    margin-right: 4%;
+	padding-left: 0.5rem;
+}
+
+.site-footer{
+	float: right;
+    /* height: 35px; */
+	/* top right bottom left */
+	padding-top: 1rem;
+    margin-right: 30%;
+    color: #000;
+    text-align: right;
+    width: 100%;
+}
+
+.fullname,
+.youremail,
+.message{
+	/* margin-left: 0.5rem; */
+	display:block;
+	padding: 0.5rem 0.5rem ;
+}
+
+.textarea{
+	height: 150px;
+	display:block;
+	width: 100%;
+}
+
+.nameinput,
+.emailinput{
+	display:block;
+	width: 100%;
+	height: 30px;
+	/* top right bottom left */
+}
+
+.box{
+ border-style: solid;
+ border-width: 1px;
+ border-color: black;
+ padding: 0.5rem 1rem 0.5rem 1rem;
+ margin-left: 0.5rem;
+ margin-right: 0.5rem;
+}
+
+h4{
+	padding-top: 1em;
+	padding-bottom: 1rem;
+    text-decoration: none;
+	font-size: 1.5rem;
+}
+.radio{
+	margin-left: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.button {
+	background: lightcyan;
+	border: 2px solid black;
+	/* top right bottom left */
+	padding: 1rem 1rem 1rem 0.5rem;
+	width: max-content;
+	text-align: center;
 }

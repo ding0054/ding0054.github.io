@@ -63,10 +63,10 @@
             <section>
                 <h3>Facts About Starfish</h3>
                 <ul>
-                    <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
-                    <li>Waryfish, &#34;lionfish; longfin smelt; leopard danio dragonfish,&#34; Lost River sucker, mojarra.</li>
-                    <li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy. </li>
-                    <li>Waryfish, &#34;lionfish; longfin smelt; leopard danio dragonfish,&#34; Lost River sucker, mojarra. </li>
+                    <li class="li-1">Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
+                    <li class="li-2">Waryfish, &#34;lionfish; longfin smelt; leopard danio dragonfish,&#34; Lost River sucker, mojarra.</li>
+                    <li class="li-3">Herring barbel Mexican golden trout, killifish bonito; northern anchovy. </li>
+                    <li class="li-4">Waryfish, &#34;lionfish; longfin smelt; leopard danio dragonfish,&#34; Lost River sucker, mojarra. </li>
                 </ul>
             </section>
         </article>
@@ -74,32 +74,36 @@
         <!-- *******about section of the artcle*******-->
         <section>
             <h3>Contact to learn more</h3>
-            <form action="Contact.html" method="get">
+                <form class="box" action="Contact.html" method="get">
                 <div>
-                    <label for="fullname">Your Name</label>
-                    <input type="text" id="fullname" name="fullname"><!--placeholder="John Doe" value=""> -->
+                    <label class="fullname" for="fullname">Your Name</label>
+                    <input class="nameinput" type="text" id="fullname" name="fullname"><!--placeholder="John Doe" value=""> -->
                 </div>
 
                 <div>
-                    <label for="youremail">Your Email</label>
-                    <input type="email" id="youremail" name="youremail" required>
+                    <label class="youremail" for="youremail">Your Email</label>
+                    <input class="emailinput" type="email" id="youremail" name="youremail" required>
                 </div>
 
                 <div>
-                    <label for="message">Your Message</label>
-                    <textarea name="message" id="message"></textarea>
+                    <label class="message" for="message">Your Message</label>
+                    <textarea class="textarea" name="message" id="message"></textarea>
                 </div>
 
-                <div>
-                    <h3>Would you like to visit the starfish?</h3>
-                    <label for="yes">Yes</label>
+                <div class="radio">
+                    <h4>Would you like to visit the starfish?</h4>
+                    <label class="yes" for="yes">Yes</label>
                     <input type="radio" name="past" id="yes">
 
-                    <label for="no">No</label>
+                    <label class="no" for="no">No</label>
                     <input type="radio" name="past" id="no">
 
-                    <label for="maybe">Maybe</label>
+                    <label class="maybe" for="maybe">Maybe</label>
                     <input type="radio" name="past" id="maybe">
+                </div>
+
+                <div class="button">
+                    <p>SEND</p>
                 </div>
         </section>  
     </main>
