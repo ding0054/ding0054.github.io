@@ -53,9 +53,6 @@ table {
 	/* Center Container */
 	margin: 0 auto;
 	background-color: #aad4cf;
-
-	
-	/* border: 6px solid; */
   }
 
   html body{
@@ -81,29 +78,72 @@ header{
 	padding-top: 10%;
 }
 
-nav ul li{
+/* * {            
+	margin: 0;            
+	padding: 0;            
+	box-sizing: border-box;        
+ }                 */
+
+ .nav ul li{
+	font-size: 1.3rem;
     display: inline-block;
     width: 31%;
+    /* padding: 1em; */
     padding-right: 12%;
-	padding-top: 1rem;
+	padding-top: 1%;
 	padding-left: 12%;
     box-sizing: border-box;
+	border-right: 0.1rem solid #000000;
+	
 }
 
-a:link, a:visited{
+ /* .nav {
+	width: 100%;
+    min-width: 600px;
+	display: flex;
+    flex-direction: column;
+	font-size: 1.2rem;
+	margin: 0 auto;
+}  */
+
+/* .nav a{
+	display: block;
+	width:auto;
+} */
+
+/* .nav li{
 	display: inline-block;
-	text-decoration: none;
-	color: black;
-}
+} */
+
+/* .nav ul li {
+	display: block;
+    float: left;        
+    list-style: none;      
+    margin-top: 10px;        
+    padding: 0px 180px 0px 180px;    
+    /* height: 13px;     
+    line-height: 13px;      
+    border-right: 1px solid #333333;        } */
+
+.nav ul li:last-child{
+    border:0
+}       
+
 
 .li-1,
 .li-2, 
 .li-3, 
 .li-4{
-	margin-left:5%;
-	width: 100%;
-	padding-left: 0rem;
+	margin-left: 5%;
+	width: 90%;
 	list-style: disc;
+	font: 1.3em sans-serif;
+} 
+
+a:link, a:visited{
+	display: block;
+	text-decoration: none;
+	color: black;
 }
 
 h2,
@@ -113,18 +153,21 @@ h3{
 	padding-bottom: 0.5rem;
     text-decoration: none;
 	font-size: 1.8rem;
-	font-weight: 0.9rem;
+	/* font-weight: 1px; */
 }
 
 p {
+	font: 1.3em sans-serif;
 	padding-left: 0.5rem;
+	padding-right: 1rem;
 }
 
 .starfishimg{
 	float: left;
     width: 250px;
     height: 250px;
-    margin-right: 4%;
+    margin-right: 2.5%;
+	margin-bottom: 3%;
 	padding-left: 0.5rem;
 }
 
@@ -133,6 +176,7 @@ p {
     /* height: 35px; */
 	/* top right bottom left */
 	padding-top: 1rem;
+	padding-bottom: 1.5rem;
     margin-right: 30%;
     color: #000;
     text-align: right;
@@ -168,6 +212,7 @@ p {
  padding: 0.5rem 1rem 0.5rem 1rem;
  margin-left: 0.5rem;
  margin-right: 0.5rem;
+
 }
 
 h4{
@@ -185,7 +230,7 @@ h4{
 	background: lightcyan;
 	border: 2px solid black;
 	/* top right bottom left */
-	padding: 1rem 1rem 1rem 0.5rem;
+	padding: 1rem 1rem 1rem 1rem;
 	width: max-content;
 	text-align: center;
 }
