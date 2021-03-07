@@ -3,19 +3,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -23,135 +91,122 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 /* ********************************Our own style************************************** */
 
-.container{
+.container {
 	width: 70%;
 	/* Center Container */
 	margin: 0 auto;
 	background-color: #aad4cf;
-  }
-
-  html body{
-	  height: 100%;
-  }
-
-body{
-	height:auto !important; 
-    background-color:lightcyan;
-	font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-	display: flex;
-    flex-direction: column;
 }
 
-header{
-    color:rgb(255, 255, 255);
+html body {
+	height: 100%;
+}
+
+body {
+	height: auto !important;
+	background-color: lightcyan;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	color: rgb(255, 255, 255);
 	font-size: 3rem;
-    text-align: center;
-    background: url("../images/lone-starfish-wide.jpg") no-repeat center center;
-    background-size: cover;
-    padding: 1em 1em 1em 1em;
+	text-align: center;
+	background: url("../images/lone-starfish-wide.jpg") no-repeat center center;
+	background-size: cover;
+	padding: 1em 1em 1em 1em;
 	padding-top: 10%;
 }
 
-/* * {            
-	margin: 0;            
-	padding: 0;            
-	box-sizing: border-box;        
- }                 */
-
- .nav ul li{
+.nav ul li {
 	font-size: 1.3rem;
-    display: inline-block;
-    width: 31%;
-    /* padding: 1em; */
-    padding-right: 12%;
+	display: inline-block;
+	width: 31%;
+	/* padding: 1em; */
+	padding-right: 12%;
 	padding-top: 1%;
 	padding-left: 12%;
-    box-sizing: border-box;
+	box-sizing: border-box;
 	border-right: 0.1rem solid #000000;
-	
+
 }
 
- /* .nav {
-	width: 100%;
-    min-width: 600px;
-	display: flex;
-    flex-direction: column;
-	font-size: 1.2rem;
-	margin: 0 auto;
-}  */
-
-/* .nav a{
-	display: block;
-	width:auto;
-} */
-
-/* .nav li{
-	display: inline-block;
-} */
-
-/* .nav ul li {
-	display: block;
-    float: left;        
-    list-style: none;      
-    margin-top: 10px;        
-    padding: 0px 180px 0px 180px;    
-    /* height: 13px;     
-    line-height: 13px;      
-    border-right: 1px solid #333333;        } */
-
-.nav ul li:last-child{
-    border:0
-}       
+.nav ul li:last-child {
+	border: 0
+}
 
 
 .li-1,
-.li-2, 
-.li-3, 
-.li-4{
+.li-2,
+.li-3,
+.li-4 {
 	margin-left: 5%;
 	width: 90%;
 	list-style: disc;
 	font: 1.3em sans-serif;
-} 
+}
 
-a:link, a:visited{
+a:link,
+a:visited {
 	display: block;
 	text-decoration: none;
 	color: black;
 }
 
 h2,
-h3{
+h3 {
 	padding-top: 1em;
 	padding-left: 0.5rem;
 	padding-bottom: 0.5rem;
-    text-decoration: none;
+	text-decoration: none;
 	font-size: 1.8rem;
 	/* font-weight: 1px; */
 }
@@ -162,66 +217,67 @@ p {
 	padding-right: 1rem;
 }
 
-.starfishimg{
+.starfishimg {
 	float: left;
-    width: 250px;
-    height: 250px;
-    margin-right: 2.5%;
+	width: 250px;
+	height: 250px;
+	margin-right: 2.5%;
 	margin-bottom: 3%;
 	padding-left: 0.5rem;
 }
 
-.site-footer{
+.site-footer {
 	float: right;
-    /* height: 35px; */
+	/* height: 35px; */
 	/* top right bottom left */
 	padding-top: 1rem;
 	padding-bottom: 1.5rem;
-    margin-right: 30%;
-    color: #000;
-    text-align: right;
-    width: 100%;
+	margin-right: 30%;
+	color: #000;
+	text-align: right;
+	width: 100%;
 }
 
 .fullname,
 .youremail,
-.message{
+.message {
 	/* margin-left: 0.5rem; */
-	display:block;
-	padding: 0.5rem 0.5rem ;
+	display: block;
+	padding: 0.5rem 0.5rem;
 }
 
-.textarea{
+.textarea {
 	height: 150px;
-	display:block;
+	display: block;
 	width: 100%;
 }
 
 .nameinput,
-.emailinput{
-	display:block;
+.emailinput {
+	display: block;
 	width: 100%;
 	height: 30px;
 	/* top right bottom left */
 }
 
-.box{
- border-style: solid;
- border-width: 1px;
- border-color: black;
- padding: 0.5rem 1rem 0.5rem 1rem;
- margin-left: 0.5rem;
- margin-right: 0.5rem;
+.box {
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	padding: 0.5rem 1rem 0.5rem 1rem;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
 
 }
 
-h4{
+h4 {
 	padding-top: 1em;
 	padding-bottom: 1rem;
-    text-decoration: none;
+	text-decoration: none;
 	font-size: 1.5rem;
 }
-.radio{
+
+.radio {
 	margin-left: 0.5rem;
 	margin-bottom: 1rem;
 }
