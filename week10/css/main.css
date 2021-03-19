@@ -1,9 +1,30 @@
-.stack stack-1 {
+.stack-1{
     display: flex;
     flex-direction: row;
   }
   
-  .stack stack-2 {
+  .stack-2{
     display: flex;
     flex-direction: row-reverse;
   }
+  
+  .stack-3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 800px;
+  }
+  
+  .stack-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .stack-5 :nth-child(all){
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 800px;
+  }
+  
