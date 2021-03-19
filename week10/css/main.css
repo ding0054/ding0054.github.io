@@ -1,0 +1,9 @@
+.stack stack-1 {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .stack stack-2 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
