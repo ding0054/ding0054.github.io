@@ -21,7 +21,7 @@
     align-items: center;
   }
   
-  .stack-5 :nth-child(all){
+  .stack-5:nth-child(all){
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
