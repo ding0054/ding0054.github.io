@@ -137,6 +137,9 @@ table {
 /* Customers style */
 
 /* Use the 'Open Sans' Google font for the webpage */
+/*Mobile Styling*/
+@media only screen and (max-width: 1200px) {
+    /* For mobile phones: */
 .container{
     width: 100%;
 	/* Center Container */
@@ -460,14 +463,7 @@ table, td, th {
  .footer2{
     padding: 1rem 1rem 0.5rem 0.5rem;
  }
-
-
-
-
-/*Mobile Styling*/
-@media only screen and (max-width: 1200px) {
-    /* For mobile phones: */
- 
+    
   }
 
 
