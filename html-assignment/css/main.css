@@ -46,7 +46,7 @@ h3 {
 
 /* id selector */
 #my-image {
-    box-shadow: 0 0 2px 1px black;
+    box-shadow: 0 0 2px 1px #222;
     width: 200px;
     height: 330px;
 }
@@ -89,7 +89,7 @@ a:focus {
 
 a:active {
     /* horizontal vertical blur spread color */
-    box-shadow: 0 0 4px 2px black;
+    box-shadow: 0 0 4px 2px #222;
     text-decoration: underline;
 }
 

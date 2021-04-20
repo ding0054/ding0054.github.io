@@ -82,7 +82,7 @@ article,
 aside {
     width: 80%;
     background-color: rgb(255, 255, 255, 0.6);
-    border: 1px solid black;
+    border: 1px solid #222;
     padding: 1.5em;
     box-sizing: border-box;
     float: left;
@@ -155,7 +155,7 @@ article>p {
 /* Adiacent sibling selector */
 h3+ul {
     /* thinkness style color */
-    border: 1px solid black;
+    border: 1px solid #222;
 }
 
 a[herf="#treatofweek"] {
@@ -185,7 +185,7 @@ nav ul a:link,
 nav ul a:visited {
     background-color: orange;
     /* horizontal vertical blur spread color */
-    box-shadow: -2px 2px 4px 2px black;
+    box-shadow: -2px 2px 4px 2px #222;
 }
 
 nav ul a:hover,
@@ -195,7 +195,7 @@ nav ul a:focus {
 
 nav ul a:active {
     /* horizontal vertical blur spread color */
-    box-shadow: 0 0 4px 2px black;
+    box-shadow: 0 0 4px 2px #222;
 }
 
 /* Position related Pasudo class selectors */
