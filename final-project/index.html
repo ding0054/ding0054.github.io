@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="container clearfix">
 
 <!-- ***************Adding head for the web page***************-->
 
@@ -9,18 +9,20 @@
         Xiaoyu Ding Final Project
     </title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
 </head>
 
 <!-- ***************Adding body part for the web page***************-->
 
 <body>
     <!-- Adding Header -->
-    <header>
+    <header class="box header">
 
+        <div class="f-logo">
         <img class="f-logoimg" src="images/logo.png" alt="logo image">
-
+    </div>
         <!-- create nav -->
-        <nav>
+        <nav class="f-topnav">
             <ul>
                 <li>
                     <a href="#home" class="f-home-link">Home</a>
@@ -37,20 +39,23 @@
                 <li>
                     <a href="#connectus" class="f-connectus-link">Contact</a>
                 </li>
-                <li>
-                    <a href="contact.html">Search</a>
-                </li>
+                <div class="f-search-container">
+                      <input type="text" placeholder="Search" name="search">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                  </div>
             </ul>
         </nav>
     </header>
 
     <!-- ***************Adding main part for the web page***************-->
-    <main>
+    <main class="f-main">
             <!-- Adding home section  -->
-            <section class="f-home">
+            <section class="box f-home">
                 <h1>
                     Welcome to Three Star Media
                 </h1>
+
+                <div class="backcolor"></div>
 
                 <p class="f-homep">
                     HTML (HyperText Markup Language) is the most basic building block of the Web.
@@ -60,14 +65,14 @@
                     or functionality/behavior (JavaScript).
                 </p>
 
-                <div class="f-connectbutton">
+                <div class="button f-connectbutton">
                     <p>Connect with us</p>
                 </div>
                 <!-- <a href="#connectus" class="connectus-link">Connect with us</a> -->
             </section>
 
             <!-- About us -->
-            <section class="f-aboutus">
+            <section class="box f-aboutus">
                 <img class="f-sboutusimg" src="images/about-us.jpg" alt="about us image">
                 <h2>About Us</h2>
                 <p class="f-aboutusp">
@@ -77,10 +82,17 @@
                     (CSS)
                     or functionality/behavior (JavaScript).
                 </p>
+                <p class="f-aboutusp2">
+                    HTML (HyperText Markup Language) is the most basic building block of the Web.
+                    It defines the meaning and structure of web content.
+                    Other technologies besides HTML are generally used to describe a web page's appearance/presentation
+                    (CSS)
+                    or functionality/behavior (JavaScript).
+                </p>
             </section>
 
             <!--created our services section -->
-            <section class="f-services">
+            <section class="box f-services">
 
                 <h2>Our Services</h2>
 
@@ -88,7 +100,7 @@
                 <div class="f-digital">
                     <img class="f-digitalimg" src="images/digital.jpg" alt="digital image">
                     <h3>Digtal Transformation</h3>
-                    <p> HTML (HyperText Markup Language) is the most basic building block of the Web.
+                    <p class="digital"> HTML (HyperText Markup Language) is the most basic building block of the Web.
                         It defines the meaning and structure of web content.
                     </p>
 
@@ -101,7 +113,7 @@
                 <div class="f-marketing">
                     <img class="f-marketingimg" src="images/marketing.jpg" alt="marketing image">
                     <h3>Marketing</h3>
-                    <p> HTML (HyperText Markup Language) is the most basic building block of the Web.
+                    <p class="marketing"> HTML (HyperText Markup Language) is the most basic building block of the Web.
                         It defines the meaning and structure of web content.
                     </p>
 
@@ -114,7 +126,7 @@
                 <div class="f-video">
                     <img class="f-videoimg" src="images/video.jpg" alt="video image">
                     <h3>Video Production</h3>
-                    <p> HTML (HyperText Markup Language) is the most basic building block of the Web.
+                    <p class="video"> HTML (HyperText Markup Language) is the most basic building block of the Web.
                         It defines the meaning and structure of web content.
                     </p>
 
@@ -127,7 +139,7 @@
                 <div class="f-web">
                     <img class="f-webimg" src="images/web.jpg" alt="web image">
                     <h3>Web Development</h3>
-                    <p> HTML (HyperText Markup Language) is the most basic building block of the Web.
+                    <p class="web"> HTML (HyperText Markup Language) is the most basic building block of the Web.
                         It defines the meaning and structure of web content.
                     </p>
 
@@ -140,7 +152,7 @@
                 <div class="f-print">
                     <img class="f-printimg" src="images/print.jpg" alt="print image">
                     <h3>Print</h3>
-                    <p> HTML (HyperText Markup Language) is the most basic building block of the Web.
+                    <p class="print"> HTML (HyperText Markup Language) is the most basic building block of the Web.
                         It defines the meaning and structure of web content.
                     </p>
 
@@ -151,8 +163,8 @@
             </section>
 
             <!-- ******************Our Vision****************************** -->
-            <section class="f-vision">
-                <h2> Our Vision</h2>
+            <section class="box f-vision">
+                <h2  class="vision-title"> Our Vision</h2>
 
                 <p class="f-visionp">
                     HTML (HyperText Markup Language) is the most basic building block of the Web.
@@ -169,7 +181,7 @@
             </section>
 
             <!-- ********************our team********************************* -->
-            <section class="f-team">
+            <section class="box f-team">
                 <h2>Our Team</h2>
                 <!-- *************John Doe******************* -->
                 <div class="f-john">
@@ -177,7 +189,7 @@
                     <h3>John Doe</h3>
                     <h4>CEO and Co-owner</h4>
                     <hr>
-                    <p>
+                    <p class="john">
                         HTML (HyperText Markup Language) is the most basic building block of the Web.
                         It defines the meaning and structure of web content.
                     </p>
@@ -189,7 +201,7 @@
                     <h3>Bob Rite</h3>
                     <h4>CFO and Co-owner</h4>
                     <hr>
-                    <p>
+                    <p class="bob">
                         HTML (HyperText Markup Language) is the most basic building block of the Web.
                         It defines the meaning and structure of web content.
                     </p>
@@ -197,7 +209,7 @@
             </section>
 
             <!-- **********************Contact Us********************************************* -->
-            <section class="f-connectus">
+            <section class="box f-connectus">
                 <h2>Contact Us</h2>
                 <div class="f-message">
                     <h3>Send us a message</h3>
@@ -218,19 +230,13 @@
                         </div>
 
                         <div class="sendbutton">
-                            <p>SEND</p>
+                            <p class="send">Send</p>
                         </div>
                     </form>
                 </div>
 
-                <div class="f-location">
-                    <h3>Location</h3>
-                    <img class="mapimg" src="images/map.PNG" alt="map image">
-                </div>
-            </section>
-
-            <!-- *********************Hours of operation*************************************** -->
-            <section class="f-hours">
+                 <!-- *********************Hours of operation*************************************** -->
+            <section class="box f-hours">
                 <h2>Hours of operation</h2>
                 <table>
                     <thead>
@@ -252,12 +258,20 @@
                     </tbody>
                 </table>
             </section>
+
+                <div class="f-location">
+                    <h3>Location</h3>
+                    <img class="mapimg" src="images/map.PNG" alt="map image">
+                </div>
+            </section>
+
+           
     </main>
 
     <!-- ***************Adding footer***************-->
     <footer>
-        <p>Copyright &copy; Three Star Media, 2020</p>
-        <p>All images are taken from Unsplash</p>
+        <p class="footer1">&copy;Copyright Three Star Media, 2020</p>
+        <p class="footer1">All images are taken from Unsplash</p>
     </footer>
 </body>
 

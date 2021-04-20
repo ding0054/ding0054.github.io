@@ -133,27 +133,378 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/****************************************************************************/
+/* Customers style */
+
+/* Use the 'Open Sans' Google font for the webpage */
+.container{
+    width: 100%;
+	/* Center Container */
+	margin: 0 auto;
+}
+
+html{
+    font-family: "Open Sans";
+    font-size: 16px;
+}
+
+header{
+    height: auto;
+    background-color: #222;
+    /* background-color: #c78c06 url("../images/logo.png") no-repeat center; */
+}
+
+.f-logo{
+    background-color: #c78c06;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.clearfix:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-right: 2%;
+    width: 100%;
+}
+ 
+li a {
+    display: block;
+    color:  #c78c06;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+ 
+li a:hover {
+    background-color: #c78c06;
+    color:  #222;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/*search bar  */
+ .f-search-container {
+    width: 100%;
+    font-size: 1rem;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .f-topnav input[type=text] {
+    width: 85%;
+    padding: 6px;
+    margin-top: 8px;
+    margin-left: 1.5%;
+    margin-bottom: 1.5%;
+    font-size: 17px;
+    border: none;
+  }
+  
+  .f-topnav .f-search-container button {
+    float: right;
+    width:10%;
+    /* padding: 6px 10px; */
+    margin-top: 8px;
+    margin-bottom: 1.5%;
+    margin-right: 1%;
+    background: #222;
+    font-size: 17px;
+    border: 1px #c78c06;
+    /* cursor: pointer; */
+  }
+  
+  /* .f-topnav .search-container button:hover {
+    background: #ccc;
+  } */
+
+  /* *************************************************************** */
+.f-home{
+    background: url(../images/main-banner.jpg) no-repeat center center;
+    background-size:cover;
+    height:auto;
+}
+
+h1{
+   padding-top: 10%; 
+   padding-left: 1.5%;
+   font-size: 4em; 
+   color:white;
+   font-weight: bold;
+}
+
+.f-homep{
+    color:white;
+    /* top right bottom left */
+	padding: 1rem 1rem 1rem 1rem;
+}
+
+.f-connectbutton{
+    background-color:#c78c06;
+	/* top right bottom left */
+	padding: 1rem 1rem 1rem 1rem;
+	width:fit-content;
+	text-align: center;
+    text-decoration: none;
+}
+
+.f-aboutus{
+    width: 100%;
+    background-color: #ffe6ac;
+}
+
+.f-sboutusimg{
+    /* top right bottom left */
+	margin: 1rem 1rem 1rem 1rem;
+    size: inherit;
+}
+
+h2{
+   padding-top: 1.5rem; 
+   padding-left: 0.5rem;
+   padding-bottom: 1.5rem;
+   font-size: 2.6em; 
+   color:black;
+   font-weight: bold; 
+}
+
+.f-aboutusp,
+.f-aboutusp2{
+    color:black;
+    padding-left: 0.5rem;
+    padding-bottom: 1.5rem;
+}
+
+/* ***************************************************** */
+.f-digital,
+.f-marketing,
+.f-video,
+.f-web,
+.f-print,
+.f-john,
+.f-bob{
+    background-color:  #ffe6ac;
+    margin-bottom: 1.5%;
+}
+
+.f-digitalimg,
+.f-marketingimg,
+.f-videoimg,
+.f-webimg,
+.f-printimg,
+.f-johnimg,
+.f-bobimg,
+.mapimg{
+width: 100%;
+}
+
+h3{
+    padding-top:1rem; 
+    padding-left: 0.5rem;
+    padding-bottom: 0.8rem;
+    font-size: 1.5em; 
+    color:black;
+    font-weight: bold; 
+}
+
+.digital,
+.marketing,
+.video,
+.web,
+.print,
+.john,
+.bob
+{
+    padding-left: 0.5rem;
+    padding-bottom: 1.5rem; 
+}
+
+.f-digitalbutton,
+.f-marketingbutton,
+.f-videobutton,
+.f-webbutton,
+.f-printbutton{
+    color:white;
+    background-color: black;
+    font-size: 1em;
+    padding: 1rem;
+	width:fit-content;
+	text-align: center;
+    text-decoration: none;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ******************************************************* */
+.f-vision{
+    background: url(../images/vision.jpg) no-repeat center center;
+    background-size:cover;
+}
+.vision-title{
+    color: white;
+}
+.f-visionp{
+    color: white;
+    padding-left: 0.5rem;
+    padding-bottom: 1.5rem; 
+}
+.f-learnmorebutton{
+    color:white;
+    background-color: black;
+    font-size: 1em;
+    padding: 1rem;
+	width:fit-content;
+	text-align: center;
+    text-decoration: none;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+/* ********************************************************* */
+h4{
+    color:black;
+    font-weight: bold; 
+    padding-left: 0.5rem;
+}
+
+.fullname,
+.youremail,
+.message {
+	/* margin-left: 0.5rem; */
+	display: block;
+	padding: 0.5rem 0.5rem;
+}
+
+.textarea {
+	height: 150px;
+	display: block;
+	width: 100%;
+}
+
+.nameinput,
+.emailinput {
+	display: block;
+	width: 100%;
+	height: 30px;
+}
+
+.f-box {
+	border-style: solid;
+    /* top right bottom left */
+	padding: 1rem 0.5rem 0.5rem 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.sendbutton {
+	background:#222;
+	font-size: 1.2em;
+    padding: 0.3rem;
+	width:fit-content;
+	text-align: center;
+    text-decoration: none;
+    margin-left: 0.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.send{
+    color:#c78c06;
+}
+.f-hours{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+table, td, th {
+    border: 1px solid black;
+    /* top right bottom left */
+	padding: 1rem 0.5rem 0.5rem 0.5rem;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th{
+      background: #ffe6ac;
+  }
+
+  footer{
+    background-color: #222;  
+    width: 100%;
+    margin-top: 1rem;
+    color: #c78c06;
+    /* top right bottom left */
+	padding: 1rem 1rem 0.5rem 0.5rem;
+  }
+ .footer1,
+ .footer2{
+    padding: 1rem 1rem 0.5rem 0.5rem;
+ }
 
 
 
 
-
-
-
-
-/* ************************************************************************** */
 /*Mobile Styling*/
 @media only screen and (max-width: 1200px) {
     /* For mobile phones: */
-    [class*="f-"] {
-      width: 100%;
-    }
+ 
   }
 
 
-/* ************************************************************************** */
+/****************************************************************************/
 /*Desktop Styling*/
 @media only screen and (min-width: 768px) {
     /* For desktop: */
+    .f-topnav {
+        overflow: hidden;
+        background-color: #222;
+      }
+      
+      .f-topnav a {
+        float: left;
+        display: block;
+        color: #c78c06;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      .f-topnav a:hover {
+        background-color: #c78c06;
+        color: #222;
+      }
+      
+      .f-topnav .f-search-container {
+        float: right;
+      }
+      
+      .f-topnav input[type=text] {
+        padding: 6px;
+        margin-top: 8px;
+        font-size: 17px;
+        border: none;
+      }
+      
+      .f-topnav .f-search-container button {
+        float: right;
+        padding: 6px 10px;
+        margin-top: 8px;
+        margin-right: 16px;
+        background: #ddd;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .f-topnav .f-search-container button:hover {
+        background: #ccc;
+      }
 
 }
