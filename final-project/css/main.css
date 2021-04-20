@@ -190,7 +190,7 @@ li a:hover {
 }
 
 /*search bar  */
- .f-search-container {
+ .search-container {
     width: 100%;
     font-size: 1rem;
     align-items: center;
@@ -207,7 +207,7 @@ li a:hover {
     border: none;
   }
   
-  .f-topnav .f-search-container button {
+  .f-topnav .search-container button {
     float: right;
     width:10%;
     /* padding: 6px 10px; */
