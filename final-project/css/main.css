@@ -148,6 +148,11 @@ html{
     font-size: 16px;
 }
 
+body{
+    margin: 0.5rem;
+    }
+    
+
 header{
     height: auto;
     background-color: #222;
@@ -168,6 +173,7 @@ header{
 }
 
 ul {
+    font-family: "Open Sans";
     list-style-type: none;
     margin: 0;
     padding-right: 2%;
@@ -228,10 +234,17 @@ li a:hover {
 .f-home{
     background: url(../images/main-banner.jpg) no-repeat center center;
     background-size:cover;
-    height:auto;
+    height: 500px;
 }
 
+.backcolor{
+    box-sizing: border-box;
+    background-color: black;
+}
+
+
 h1{
+    font-family: "Open Sans";
    padding-top: 10%; 
    padding-left: 1.5%;
    font-size: 4em; 
@@ -240,6 +253,7 @@ h1{
 }
 
 .f-homep{
+    font-family: "Open Sans";
     color:white;
     /* top right bottom left */
 	padding: 1rem 1rem 1rem 1rem;
