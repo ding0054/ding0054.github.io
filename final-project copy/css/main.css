@@ -603,31 +603,36 @@ table, td, th {
         margin-left: 5%;
     }
 
-    .servicespage{
-        width: 80%;
-        margin: 0 auto;
-        display:grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas:  
-        "one one one two two two"
-        "three three four four five five";
+    .service{
+        margin: 1rem;
     }
 
-    .servicespage .service:nth-child(1){
+    .serveicespage{
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas:
+        "one one one two two two"
+        "three three four four five five"
+         ;
+    }
+
+    .serveicespage .service:nth-child(1){
         grid-area: one;
     }
-    .servicespage .service:nth-child(2){
+    .serveicespage .service:nth-child(2){
         grid-area: two;
     }
-    .servicespage .service:nth-child(3){
+    .serveicespage .service:nth-child(3){
         grid-area: three;
     }
-    .servicespage .service:nth-child(4){
+    .serveicespage .service:nth-child(4){
         grid-area: four;
     }
-    .servicespage .service:nth-child(5){
+    .serveicespage .service:nth-child(5){
         grid-area: five;
-    } 
+    }
       
 }

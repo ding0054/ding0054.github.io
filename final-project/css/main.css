@@ -135,7 +135,8 @@ table {
 }
 
 /****************************************************************************/
-/* Customers style */
+/*************************** Customers style *******************************/
+/****************************************************************************/
 
 
 /*Mobile Styling*/
@@ -309,13 +310,20 @@ h2{
 }
 
 /* *********************set our sevice******************************** */
-.f-digital,
+/* .f-digital,
 .f-marketing,
 .f-video,
 .f-web,
 .f-print,
 .f-john,
-.f-bob{
+.f-bob{ */
+    .service{
+    background-color:  #ffe6ac;
+    margin-bottom: 1rem;
+    height:fit-content;
+}
+
+.team{
     background-color:  #ffe6ac;
     margin-bottom: 1rem;
     height:fit-content;
@@ -534,9 +542,10 @@ table, td, th {
  }
     
 
-
 /****************************************************************************/
-/*Desktop Styling*/
+/*******************Desktop Styling******************************************/
+/****************************************************************************/
+
 @media only screen and (min-width: 768px) {
     /* For desktop: */
 
@@ -590,29 +599,40 @@ table, td, th {
         background: #ccc;
       }
 
+      .ser{
+        margin-left: 5%;
+    }
 
-      .servicespage{
-          display:grid;
-          grid-template-columns:repeat(6,1fr);
-          grid-template-rows: repeat(2,1fr);
-          grid-template-areas: 
-          "box1 box1 box1 box2 box2 box2"
-          "box3 box3 box4 box4 box5 box5"
-      } 
+    .service{
+        margin: 1rem;
+    }
 
-      .servicespage .service:nth-child(1){
-          grid-area: box1;
-      }
-      .servicespage .service:nth-child(2){
-        grid-area: box2;
+    .serveicespage{
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas:
+        "one one one two two two"
+        "three three four four five five"
+         ;
     }
-    .servicespage .service:nth-child(3){
-        grid-area: box3;
+
+    .serveicespage .service:nth-child(1){
+        grid-area: one;
     }
-    .servicespage .service:nth-child(4){
-        grid-area: box4;
+    .serveicespage .service:nth-child(2){
+        grid-area: two;
     }
-    .servicespage .service:nth-child(5){
-        grid-area: box5;
+    .serveicespage .service:nth-child(3){
+        grid-area: three;
     }
+    .serveicespage .service:nth-child(4){
+        grid-area: four;
+    }
+    .serveicespage .service:nth-child(5){
+        grid-area: five;
+    }
+      
 }
