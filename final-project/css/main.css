@@ -505,14 +505,14 @@ h4{
 }
 
 /*************************** set hours talbe position*******************************/
-.f-hours{
+.us:nth-child(2){
     margin-left: 0.5rem;
     margin-right: 0.5rem;
 }
 
 
 /* *************************location map setting********************************* */
-.location{
+.us:nth-child(3){
    width: 100%;
 }
 
@@ -690,5 +690,31 @@ table, td, th {
     }
 
 
-      
+/* **************************************set connect us page***********************/
+/* ******************************************************************************/
+    .f-connectus{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .connectuspage{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .connectuspage .us:nth-child(1){
+        flex-basis: 50%;
+        height:auto;
+    }
+    .connectuspage .us:nth-child(2){
+        flex-basis: 100%;
+        height:auto;
+        order: 1;
+    }
+    .connectuspage .us:nth-child(3){
+        margin-top: 1.5rem;
+        flex-basis: 50%;
+        height:auto;
+        order: 0;
+    }
 }
