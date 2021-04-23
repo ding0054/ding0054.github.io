@@ -310,13 +310,6 @@ h2{
 }
 
 /* *********************set our sevice******************************** */
-/* .f-digital,
-.f-marketing,
-.f-video,
-.f-web,
-.f-print,
-.f-john,
-.f-bob{ */
     .service{
     background-color:  #ffe6ac;
     margin-bottom: 1rem;
@@ -367,47 +360,26 @@ h3{
     padding-bottom: 1.5rem; 
 }
 
-.f-digitalbutton ,
-.f-marketingbutton,
-.f-videobutton,
-.f-webbutton,
-.f-printbutton{
-    
-    margin-bottom: 2rem;
-    margin-left: 0.5rem;
-    /* color:white;
-    background-color: #222;
-    font-size: 1em;
-    padding: 1rem;
-	width:fit-content;
-	text-align: center;
-    text-decoration: none;
-    margin-left: 0.5rem;
-    margin-bottom: 0.5rem; */
-}
-.f-digitalbutton a,
-.f-marketingbutton a,
-.f-videobutton a,
-.f-webbutton a,
-.f-printbutton a{
+.servicebutton{
     background-color:#222;
-	/* top right bottom left */
-	padding: 1rem 1rem 1rem 1rem;
+    width:fit-content;
     margin-bottom: 2rem;
-	width:fit-content;
+    margin-left: 0.5rem;
+}
+.servicebutton a{
+    
+	
+	padding: 1rem 0.5rem 1rem 1rem;
+    
 	text-align: center;
     text-decoration: none;
     line-height: 3rem;
     color:white;
 }
 
-.f-digitalbutton i,
-.f-marketingbutton i,
-.f-videobutton i,
-.f-webbutton i,
-.f-printbutton i{
+.servicebutton i{
     margin-left: 15px;
-    margin-bottom: 2rem;
+   
 }
 
 /* ********************our vision part setting*********************************** */
@@ -651,6 +623,20 @@ table, td, th {
     .serveicespage .service:nth-child(5){
         grid-area: five;
     }
+
+    .servicebutton{
+        background-color:#222;
+        width:90%;
+        margin: right 5px;
+    }
+
+    .servicebutton a i{
+        /* top right bottom left */
+        text-align: center;
+        text-decoration: none;
+        color:white;
+    }
+
 
 /* **************************************set our team page***********************/
 /* ******************************************************************************/
