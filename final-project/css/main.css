@@ -377,8 +377,7 @@ h3{
 .f-marketingbutton a,
 .f-videobutton a,
 .f-webbutton a,
-.f-printbutton a,
-.f-learnmorebutton a{
+.f-printbutton a{
     background-color:#222;
 	/* top right bottom left */
 	padding: 1rem 1rem 1rem 1rem;
@@ -413,26 +412,28 @@ h3{
     padding-bottom: 1.5rem; 
 }
 
-.f-learnmorebutton i{
-    margin-left: 15px;
-    
-}
-/* .f-learnmorebutton a{
-    
-} */
 
 .f-learnmorebutton{
-    color:white;
-    background-color: #222;
-    font-size: 1em;
-    padding: 1rem 1rem 1rem 1rem;
+    margin-bottom: 2rem;
+    margin-left: 0.5rem;
+}
+
+.f-learnmorebutton i{
+    margin-left: 15px;
+    margin-bottom: 2rem;
+}
+.f-learnmorebutton a{
+    background-color:#222;
+	/* top right bottom left */
+	padding: 1rem 1rem 1rem 1rem;
+    margin-bottom: 2rem;
 	width:fit-content;
 	text-align: center;
     text-decoration: none;
-    margin-left: 0.5rem;
+    line-height: 3rem;
+    color:white;
     border: 1px #c78c06 solid;
 }
-
 
 /* ********************************************************* */
 h4{
