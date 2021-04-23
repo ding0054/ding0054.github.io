@@ -600,57 +600,34 @@ table, td, th {
       }
 
       .ser{
-        margin-left: 10%;
+        margin-left: 5%;
     }
-
-      /* .serveicespage{
-        width: 80%;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-      }  */
-
-      /* .servicespage .service:nth-child(1),
-      .servicespage .service:nth-child(2)
-      {
-        flex-basis: calc(50% - 4px);
-      }
-    
-    .servicespage .service:nth-child(3){
-        grid-area: box3;
-    }
-    .servicespage .service:nth-child(4){
-        grid-area: box4;
-    }
-    .servicespage .service:nth-child(5){
-        grid-area: box5;
-    } */
 
     .servicespage{
         width: 80%;
         margin: 0 auto;
-        display: grid;
+        display:grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: 
+        grid-template-areas:  
         "one one one two two two"
         "three three four four five five";
     }
 
     .servicespage .service:nth-child(1){
         grid-area: one;
-      }
-      .servicespage .service:nth-child(2){
+    }
+    .servicespage .service:nth-child(2){
         grid-area: two;
-      }
-      .servicespage .service:nth-child(3){
+    }
+    .servicespage .service:nth-child(3){
         grid-area: three;
-      }
-      .servicespage .service:nth-child(4){
+    }
+    .servicespage .service:nth-child(4){
         grid-area: four;
-      }
-      .servicespage .service:nth-child(5){
+    }
+    .servicespage .service:nth-child(5){
         grid-area: five;
-      }
+    } 
       
 }
