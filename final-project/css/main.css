@@ -137,7 +137,7 @@ table {
 /****************************************************************************/
 /* Customers style */
 
-/* Use the 'Open Sans' Google font for the webpage */
+
 /*Mobile Styling*/
     /* For mobile phones: */
 .container{
@@ -146,6 +146,7 @@ table {
 	margin: 0 auto;
 }
 
+/* Use the 'Open Sans' Google font for the webpage */
 html{
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -188,6 +189,7 @@ li i{
     border: 1px #c78c06 solid;
     padding: 0.5rem 1.1rem 0.5rem 1.1rem;
 }
+
 li a {
     display: block;
     color:  #c78c06;
@@ -206,9 +208,9 @@ li a:hover {
 /*search bar  */
  .search-container {
     width: 100%;
-    font-size: 1rem;
-    align-items: center;
-    padding: 0.5rem;
+    font-size: 1rem;
+    align-items: center;
+    padding: 0.5rem;
   }
   
   .f-topnav input[type=text] {
@@ -284,9 +286,10 @@ h1{
 }
 
 .f-sboutusimg{
-    /* top right bottom left */
-	margin: 1rem 1rem 1rem 1rem;
-    size: inherit;
+    width: 96%;
+    margin-top: 0.5rem;
+    margin-left: 2%;
+    
 }
 
 h2{
@@ -468,9 +471,9 @@ h4{
     margin-right: 0.5rem;
 }
 
-.f-location{
-    margin: 1rem 1rem 1rem 2rem;
+.location{
     width:100%;
+    margin: 1rem 1rem 1rem 2rem;
 }
 
 table, td, th {
