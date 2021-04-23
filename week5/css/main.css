@@ -97,7 +97,7 @@ aside ul li:first-child {
     font-weight: bold;
 }
 
-section ol li:last-child {
+div ol li:last-child {
     font-weight: bold;
 }
 

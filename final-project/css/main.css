@@ -78,7 +78,7 @@ menu,
 nav,
 output,
 ruby,
-section,
+div,
 summary,
 time,
 mark,
@@ -103,7 +103,7 @@ header,
 hgroup,
 menu,
 nav,
-section {
+div {
 	display: block;
 }
 
@@ -308,7 +308,7 @@ h2{
     padding-bottom: 1.5rem;
 }
 
-/* ***************************************************** */
+/* *********************set our sevice******************************** */
 .f-digital,
 .f-marketing,
 .f-video,
@@ -317,9 +317,11 @@ h2{
 .f-john,
 .f-bob{
     background-color:  #ffe6ac;
-    margin-bottom: 1.5%;
+    margin-bottom: 0.6rem;
+    height:fit-content;
 }
 
+/* set img width by 100% */
 .f-digitalimg,
 .f-marketingimg,
 .f-videoimg,
@@ -340,6 +342,7 @@ h3{
     font-weight: bold; 
 }
 
+/* set size for P */
 .digital,
 .marketing,
 .video,
@@ -352,12 +355,15 @@ h3{
     padding-bottom: 1.5rem; 
 }
 
-/* .f-digitalbutton ,
+.f-digitalbutton ,
 .f-marketingbutton,
 .f-videobutton,
 .f-webbutton,
 .f-printbutton{
-    color:white;
+    
+    margin-bottom: 2rem;
+    margin-left: 0.5rem;
+    /* color:white;
     background-color: #222;
     font-size: 1em;
     padding: 1rem;
@@ -365,8 +371,8 @@ h3{
 	text-align: center;
     text-decoration: none;
     margin-left: 0.5rem;
-    margin-bottom: 0.5rem;
-} */
+    margin-bottom: 0.5rem; */
+}
 .f-digitalbutton a,
 .f-marketingbutton a,
 .f-videobutton a,
@@ -376,6 +382,7 @@ h3{
     background-color:#222;
 	/* top right bottom left */
 	padding: 1rem 1rem 1rem 1rem;
+    margin-bottom: 2rem;
 	width:fit-content;
 	text-align: center;
     text-decoration: none;
@@ -387,12 +394,12 @@ h3{
 .f-marketingbutton i,
 .f-videobutton i,
 .f-webbutton i,
-.f-printbutton i,
-.f-learnmorebutton i{
-margin-left: 10px;
+.f-printbutton i{
+    margin-left: 15px;
+    margin-bottom: 2rem;
 }
 
-/* ******************************************************* */
+/* ********************our vision part setting*********************************** */
 .f-vision{
     background: url(../images/vision.jpg) no-repeat center center;
     background-size:cover;
@@ -405,17 +412,28 @@ margin-left: 10px;
     padding-left: 0.5rem;
     padding-bottom: 1.5rem; 
 }
+
+.f-learnmorebutton i{
+    margin-left: 15px;
+    
+}
+/* .f-learnmorebutton a{
+    
+} */
+
 .f-learnmorebutton{
     color:white;
     background-color: #222;
     font-size: 1em;
-    padding: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
 	width:fit-content;
 	text-align: center;
     text-decoration: none;
     margin-left: 0.5rem;
-    margin-bottom: 0.5rem;
+    border: 1px #c78c06 solid;
 }
+
+
 /* ********************************************************* */
 h4{
     color:#222;
@@ -431,12 +449,14 @@ h4{
 	padding: 0.5rem 0.5rem;
 }
 
+/***************************set text area size***************************/
 .textarea {
 	height: 150px;
 	display: block;
 	width: 100%;
 }
 
+/***************************set name and email input size*******************/
 .nameinput,
 .emailinput {
 	display: block;
@@ -444,7 +464,8 @@ h4{
 	height: 30px;
 }
 
-.f-box {
+/***************************set conntect us from**************************/
+.f-contactform {
 	border-style: solid;
     /* top right bottom left */
 	padding: 1rem 0.5rem 0.5rem 0.5rem;
@@ -452,6 +473,7 @@ h4{
     margin-right: 0.5rem;
 }
 
+/***************************set send button*****************************/
 .sendbutton {
 	background:#222;
 	font-size: 1.2em;
@@ -463,17 +485,22 @@ h4{
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
+
+/***************************send button color****************************************/
 .send{
     color:#c78c06;
 }
+
+/*************************** set hours talbe position*******************************/
 .f-hours{
     margin-left: 0.5rem;
     margin-right: 0.5rem;
 }
 
+
+/* *************************location map setting********************************* */
 .location{
-    width:100%;
-    margin: 1rem 1rem 1rem 2rem;
+   width: 100%;
 }
 
 table, td, th {
@@ -491,6 +518,7 @@ table, td, th {
       background: #ffe6ac;
   }
 
+  /* set footer */
   footer{
     background-color: #222;  
     width: 100%;

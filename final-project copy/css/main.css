@@ -78,7 +78,7 @@ menu,
 nav,
 output,
 ruby,
-section,
+div,
 summary,
 time,
 mark,
@@ -103,7 +103,7 @@ header,
 hgroup,
 menu,
 nav,
-section {
+div {
 	display: block;
 }
 
