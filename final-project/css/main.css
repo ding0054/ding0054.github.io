@@ -325,8 +325,12 @@ h2{
 
 .team{
     background-color:  #ffe6ac;
-    margin-bottom: 1rem;
-    height:fit-content;
+    /* margin-bottom: 1rem; */
+    height:auto;
+}
+
+.team:nth-child(3){
+    margin-top: 1rem;
 }
 
 /* set img width by 100% */
@@ -338,7 +342,7 @@ h2{
 .f-johnimg,
 .f-bobimg,
 .mapimg{
-width: 100%;
+    width: 100%;
 }
 
 h3{
@@ -549,10 +553,13 @@ table, td, th {
 @media only screen and (min-width: 768px) {
     /* For desktop: */
 
+    /* ***************set max width************************** */
     body{
         max-width: 1200px;
     }
 
+    /* **************************************set nav***************************/
+    /* ************************************************************************/
     .f-topnav {
         overflow: hidden;
         background-color: #222;
@@ -573,9 +580,7 @@ table, td, th {
         color: #222;
       }
       
-      .f-topnav .f-search-container {
-        float: right;
-      }
+      
       
       .f-topnav input[type=text] {
         padding: 6px;
@@ -584,6 +589,10 @@ table, td, th {
         border: none;
       }
       
+      /*******************set search boutton**********************/
+      /* .f-topnav .f-search-container {
+        float: right;
+      } */
       .f-topnav .f-search-container button {
         float: right;
         padding: 6px 10px;
@@ -599,7 +608,12 @@ table, td, th {
         background: #ccc;
       }
 
-      .ser{
+
+/* **************************************set our service page********************/
+/* ******************************************************************************/
+
+    /* h2 header margin */
+    .ser{
         margin-left: 5%;
     }
 
@@ -607,6 +621,7 @@ table, td, th {
         margin: 1rem;
     }
 
+    /* ******set grid mode for our service page*********** */
     .serveicespage{
         width: 90%;
         margin: 0 auto;
@@ -618,6 +633,8 @@ table, td, th {
         "three three four four five five"
          ;
     }
+
+    /* ******set our service child name************ */
 
     .serveicespage .service:nth-child(1){
         grid-area: one;
@@ -634,5 +651,44 @@ table, td, th {
     .serveicespage .service:nth-child(5){
         grid-area: five;
     }
+
+/* **************************************set our team page***********************/
+/* ******************************************************************************/
+    .f-team{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .team{
+        margin: 0;
+    }
+
+    /* fix mobile page top margin */
+    .team:nth-child(3){
+        margin-top: 0%;
+    }
+
+    .teampage{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .teampage .team:nth-child(1),
+    .teampage .team:nth-child(2){
+        flex-basis: 50%;
+        height:auto;
+    }
+    .teampage .team:nth-child(3){
+        flex-basis: 50%;
+        height:auto;
+        order: 1;
+    }
+    .teampage .team:nth-child(4){
+        flex-basis: 50%;
+        height:auto;
+        order: 0;
+    }
+
+
       
 }
