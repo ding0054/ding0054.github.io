@@ -135,7 +135,8 @@ table {
 }
 
 /****************************************************************************/
-/* Customers style */
+/*************************** Customers style *******************************/
+/****************************************************************************/
 
 
 /*Mobile Styling*/
@@ -308,18 +309,27 @@ h2{
     padding-bottom: 1.5rem;
 }
 
-/* ***************************************************** */
-.f-digital,
+/* *********************set our sevice******************************** */
+/* .f-digital,
 .f-marketing,
 .f-video,
 .f-web,
 .f-print,
 .f-john,
-.f-bob{
+.f-bob{ */
+    .service{
     background-color:  #ffe6ac;
-    margin-bottom: 1.5%;
+    margin-bottom: 1rem;
+    height:fit-content;
 }
 
+.team{
+    background-color:  #ffe6ac;
+    margin-bottom: 1rem;
+    height:fit-content;
+}
+
+/* set img width by 100% */
 .f-digitalimg,
 .f-marketingimg,
 .f-videoimg,
@@ -340,6 +350,7 @@ h3{
     font-weight: bold; 
 }
 
+/* set size for P */
 .digital,
 .marketing,
 .video,
@@ -352,12 +363,15 @@ h3{
     padding-bottom: 1.5rem; 
 }
 
-/* .f-digitalbutton ,
+.f-digitalbutton ,
 .f-marketingbutton,
 .f-videobutton,
 .f-webbutton,
 .f-printbutton{
-    color:white;
+    
+    margin-bottom: 2rem;
+    margin-left: 0.5rem;
+    /* color:white;
     background-color: #222;
     font-size: 1em;
     padding: 1rem;
@@ -365,17 +379,17 @@ h3{
 	text-align: center;
     text-decoration: none;
     margin-left: 0.5rem;
-    margin-bottom: 0.5rem;
-} */
+    margin-bottom: 0.5rem; */
+}
 .f-digitalbutton a,
 .f-marketingbutton a,
 .f-videobutton a,
 .f-webbutton a,
-.f-printbutton a,
-.f-learnmorebutton a{
+.f-printbutton a{
     background-color:#222;
 	/* top right bottom left */
 	padding: 1rem 1rem 1rem 1rem;
+    margin-bottom: 2rem;
 	width:fit-content;
 	text-align: center;
     text-decoration: none;
@@ -387,12 +401,12 @@ h3{
 .f-marketingbutton i,
 .f-videobutton i,
 .f-webbutton i,
-.f-printbutton i,
-.f-learnmorebutton i{
-margin-left: 10px;
+.f-printbutton i{
+    margin-left: 15px;
+    margin-bottom: 2rem;
 }
 
-/* ******************************************************* */
+/* ********************our vision part setting*********************************** */
 .f-vision{
     background: url(../images/vision.jpg) no-repeat center center;
     background-size:cover;
@@ -405,17 +419,30 @@ margin-left: 10px;
     padding-left: 0.5rem;
     padding-bottom: 1.5rem; 
 }
+
+
 .f-learnmorebutton{
-    color:white;
-    background-color: #222;
-    font-size: 1em;
-    padding: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 0.5rem;
+}
+
+.f-learnmorebutton i{
+    margin-left: 15px;
+    margin-bottom: 2rem;
+}
+.f-learnmorebutton a{
+    background-color:#222;
+	/* top right bottom left */
+	padding: 1rem 1rem 1rem 1rem;
+    margin-bottom: 2rem;
 	width:fit-content;
 	text-align: center;
     text-decoration: none;
-    margin-left: 0.5rem;
-    margin-bottom: 0.5rem;
+    line-height: 3rem;
+    color:white;
+    border: 1px #c78c06 solid;
 }
+
 /* ********************************************************* */
 h4{
     color:#222;
@@ -431,12 +458,14 @@ h4{
 	padding: 0.5rem 0.5rem;
 }
 
+/***************************set text area size***************************/
 .textarea {
 	height: 150px;
 	display: block;
 	width: 100%;
 }
 
+/***************************set name and email input size*******************/
 .nameinput,
 .emailinput {
 	display: block;
@@ -444,7 +473,8 @@ h4{
 	height: 30px;
 }
 
-.f-box {
+/***************************set conntect us from**************************/
+.f-contactform {
 	border-style: solid;
     /* top right bottom left */
 	padding: 1rem 0.5rem 0.5rem 0.5rem;
@@ -452,6 +482,7 @@ h4{
     margin-right: 0.5rem;
 }
 
+/***************************set send button*****************************/
 .sendbutton {
 	background:#222;
 	font-size: 1.2em;
@@ -463,17 +494,22 @@ h4{
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
+
+/***************************send button color****************************************/
 .send{
     color:#c78c06;
 }
+
+/*************************** set hours talbe position*******************************/
 .f-hours{
     margin-left: 0.5rem;
     margin-right: 0.5rem;
 }
 
+
+/* *************************location map setting********************************* */
 .location{
-    width:100%;
-    margin: 1rem 1rem 1rem 2rem;
+   width: 100%;
 }
 
 table, td, th {
@@ -491,6 +527,7 @@ table, td, th {
       background: #ffe6ac;
   }
 
+  /* set footer */
   footer{
     background-color: #222;  
     width: 100%;
@@ -505,9 +542,10 @@ table, td, th {
  }
     
 
-
 /****************************************************************************/
-/*Desktop Styling*/
+/*******************Desktop Styling******************************************/
+/****************************************************************************/
+
 @media only screen and (min-width: 768px) {
     /* For desktop: */
 
@@ -561,22 +599,23 @@ table, td, th {
         background: #ccc;
       }
 
-
-      .servicespage{
-          display:grid;
-          grid-template-columns:repeat(6,1fr);
-          grid-template-rows: repeat(2,1fr);
-          grid-template-areas: 
-          "box1 box1 box1 box2 box2 box2"
-          "box3 box3 box4 box4 box5 box5"
-      } 
-
-      .servicespage .service:nth-child(1){
-          grid-area: box1;
-      }
-      .servicespage .service:nth-child(2){
-        grid-area: box2;
+      .ser{
+        margin-left: 10%;
     }
+
+      /* .serveicespage{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+      }  */
+
+      /* .servicespage .service:nth-child(1),
+      .servicespage .service:nth-child(2)
+      {
+        flex-basis: calc(50% - 4px);
+      }
+    
     .servicespage .service:nth-child(3){
         grid-area: box3;
     }
@@ -585,5 +624,33 @@ table, td, th {
     }
     .servicespage .service:nth-child(5){
         grid-area: box5;
+    } */
+
+    .servicespage{
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "one one one two two two"
+        "three three four four five five";
     }
+
+    .servicespage .service:nth-child(1){
+        grid-area: one;
+      }
+      .servicespage .service:nth-child(2){
+        grid-area: two;
+      }
+      .servicespage .service:nth-child(3){
+        grid-area: three;
+      }
+      .servicespage .service:nth-child(4){
+        grid-area: four;
+      }
+      .servicespage .service:nth-child(5){
+        grid-area: five;
+      }
+      
 }
