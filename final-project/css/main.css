@@ -550,7 +550,7 @@ table, td, th {
     /* **************************************set nav***************************/
     /* ************************************************************************/
     .f-topnav {
-        overflow: hidden;
+         overflow: hidden;
         background-color: #222;
       }
       
@@ -568,9 +568,7 @@ table, td, th {
         background-color: #c78c06;
         color: #222;
       }
-      
-      
-      
+    
       .f-topnav input[type=text] {
         padding: 6px;
         margin-top: 8px;
@@ -641,17 +639,7 @@ table, td, th {
         margin:1rem;
     }
 
-    header{
-        width: 100%;
-        display:inline-flex;
-    }
-
-    .f-topnav .f-home-link,
-    .f-topnav .f-aboutus-link,
-    .f-topnav .f-services-link,
-    .f-topnav .f-team-link{
-        display:inline; 
-    }
+    
       
 /* **************************************set our service page********************/
 /* ******************************************************************************/
