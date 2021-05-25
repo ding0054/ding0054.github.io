@@ -142,11 +142,7 @@ html #main {
   }
 
 p{
-    font-family: sans-serif;
-    color: whitesmoke;
-    text-align: justify;
-    margin: 3%;
-    font-size: 1.5rem;
+    margin: 3%;  
 }
 
 body #nav {
@@ -186,8 +182,8 @@ main #home {
     font-size: 1.5rem;
     text-align: justify;
     font-weight: lighter;
-  
-
+    color: whitesmoke;
+    
 }
 
 
@@ -205,11 +201,12 @@ main #about {
     margin-bottom: 1rem;
 }
 
-section .about {
+main .about {
     font-family: sans-serif;
     font-size: 1.5rem;
     text-align: justify;
     font-weight: lighter;
+    color:whitesmoke;
   
 }
 
@@ -219,9 +216,16 @@ section .about-image {
     width: 25%;
 }
 
+
+
 main #contact {
     padding: 100px 0px;
     background-color: #6B7A8F;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    text-align: justify;
+    font-weight: lighter;
+    color: whitesmoke;
 }
 
 section .contact-form {
@@ -258,8 +262,9 @@ button{
     height: max-content;
 }
 
-footer{
-    font-size: 1rem;
-    float: right;
-    color: #000000;
+footer {
+    margin:0rem;
+    width: 100%;
+    text-align: right;
+    width: 88%;
 }
