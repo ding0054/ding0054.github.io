@@ -135,27 +135,32 @@ table {
 }
 
 /* **********coutomer style**************************************************** */
+
+/* set html and main page width and color */
 html #main {
     width: 100%;
     margin: 0px auto;
-    background-color:white;
-  }
-
-p{
-    margin: 3%;  
+    background-color: white;
 }
 
+/* set all paragraph spacing  */
+p {
+    margin: 3%;
+}
+
+/* Styles the navigation bar */
 body #nav {
-    width:100%;
+    width: 100%;
     height: fit-content;
-    
+
     padding: 1.5rem;
 
     border: none;
-    background-color:white;
+    background-color: white;
     text-align: center;
 }
 
+/* Styles navigation text */
 body .nav .nav-link {
     margin: 5rem;
 
@@ -165,59 +170,63 @@ body .nav .nav-link {
     text-decoration: none;
 }
 
+/* Sets when navigation connects on hover */
 .nav a:hover {
     color: white;
     border: 15px solid #695474;
     background-color: #695474;
 }
 
+/* Set the style of the home page */
 main #home {
     padding: 100px;
     background-color: #695474;
     margin-bottom: 1rem;
 }
 
+/* Set the style of text on the home page */
 .main .home {
     font-family: sans-serif;
     font-size: 1.5rem;
     text-align: justify;
     font-weight: lighter;
     color: whitesmoke;
-    
 }
 
-
+/* Set the style of headings */
 section .page-title,
 section .section-title {
     margin-bottom: 2rem;
     font-size: 2.5rem;
     text-align: center;
-    color:whitesmoke;
+    color: whitesmoke;
 }
 
+/* Set styles of about page*/
 main #about {
     padding: 100px 0px;
     background-color: #b99a7d;
     margin-bottom: 1rem;
 }
 
+/* Set the style of text on the about page  */
 main .about {
     font-family: sans-serif;
     font-size: 1.5rem;
     text-align: justify;
     font-weight: lighter;
-    color:whitesmoke;
-  
+    color: whitesmoke;
+
 }
 
+/* Sets the image position on the about page */
 section .about-image {
     float: inline-start;
 
     width: 25%;
 }
 
-
-
+/* Set styles of contact page */
 main #contact {
     padding: 100px 0px;
     background-color: #6B7A8F;
@@ -228,6 +237,7 @@ main #contact {
     color: whitesmoke;
 }
 
+/* Set styles of contact form */
 section .contact-form {
     padding: 30px;
     background-color: #b99a7d;
@@ -235,36 +245,52 @@ section .contact-form {
     margin: 0px auto;
 }
 
+/* Set label styles */
 label {
     font-size: 1.5rem;
     color: white;
 
 }
 
+/* Set textarea and input styles */
 textarea,
-input{
+input {
     border: none;
     padding: 10%;
     width: 100%;
 }
 
-textarea{
+/* Set textarea size */
+textarea {
     height: 200px;
     width: 100%;
 }
 
-button{
+/* Set button styles */
+button {
     background-color: #6B7A8F;
     color: whitesmoke;
     font-size: 1.5rem;
-    font-weight:lighter;
+    font-weight: lighter;
     margin-top: 1.5rem;
     height: max-content;
 }
 
+/* Set footer style */
 footer {
-    margin:0rem;
+    margin: 0rem;
     width: 100%;
     text-align: right;
     width: 88%;
+}
+
+/*******************Desktop Styling******************************************/
+
+@media only screen and (min-width: 768px) {
+
+    /* ***************set max width************************** */
+    body {
+        max-width: 1200px;
+        margin: 0px auto;
+    }
 }
