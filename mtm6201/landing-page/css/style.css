@@ -148,9 +148,13 @@ table {
         font-family: Montserrat-Regular;
         src: url('fonts/Montserrat-Regular.ttf');
       }
+
+      @font-face {
+          font-family:Montserrat-Light;
+          src: url('fonts/Montserrat-Light.ttf');
+      }
 /* 
-        font-family: Montserrat-Light;
-        src: url('fonts/Montserrat-Light.ttf');
+       
 
         font-family: Montserrat-Thin;
         src: url('fonts/Montserrat-Thin.ttf'); */
@@ -158,17 +162,13 @@ table {
 
 /*Mobile Styling*/
     /* For mobile phones: */
-.container{
-    width: 100%;
-	/* Center Container */
-	margin: 0 auto;
-}
 
-/* Use the 'Open Sans' Google font for the webpage */
+/* Use the 'Montserrat-Light' font for the webpage */
 html{
-    font-family: 'Open Sans', sans-serif;
+    font-family: Montserrat-Light;
     font-size: 16px;
     background-color: #F7F7FF;
+    margin: 0 auto;
 }
 
 .header{
@@ -197,6 +197,8 @@ h4{
     padding: 15px;
     border: none;
     border-radius: 11px;
+    margin-top: 1rem;
+    margin-bottom: ;
 }
 
 .calculate{
@@ -209,6 +211,37 @@ h4{
     border: none;
     border-radius: 11px;
 }
+ li{
+    list-style: none;
+    padding: 5px;
+}
+input{
+    background-color: #F4F4F5;
+    padding: 10px;
+    border: none;
+    border-radius: 11px;
+}
+
+::placeholder {
+    color: #9B9B9B;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #9B9B9B;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: #9B9B9B;
+  }
+
+
+.body .cf{
+    float: left;
+}
+
+.f-contactform{
+   }
 
 footer{
     background-color: #FFFD8C;
