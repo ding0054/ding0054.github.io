@@ -84,12 +84,12 @@ time,
 mark,
 audio,
 video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -104,104 +104,169 @@ hgroup,
 menu,
 nav,
 div {
-	display: block;
+    display: block;
 }
 
 body {
-	line-height: 1;
+    line-height: 1;
 }
 
 ol,
 ul {
-	list-style: none;
+    list-style: none;
 }
 
 blockquote,
 q {
-	quotes: none;
+    quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /****************************************************************************/
 /*************************** Customers style *******************************/
 /****************************************************************************/
 
- 
-      @font-face {
-        font-family: Montserrat-Black;
-        src: url('fonts/Montserrat-Black.ttf');
-      }
 
-      @font-face {
-        font-family: Montserrat-Regular;
-        src: url('fonts/Montserrat-Regular.ttf');
-      }
+@font-face {
+    font-family: Montserrat-Black;
+    src: url('fonts/Montserrat-Black.ttf');
+}
 
-      @font-face {
-          font-family:Montserrat-Light;
-          src: url('fonts/Montserrat-Light.ttf');
-      }
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url('fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-Light;
+    src: url('fonts/Montserrat-Light.ttf');
+}
+
 /* 
        
 
         font-family: Montserrat-Thin;
         src: url('fonts/Montserrat-Thin.ttf'); */
-      
+
 
 /*Mobile Styling*/
-    /* For mobile phones: */
+/* For mobile phones: */
 
 /* Use the 'Montserrat-Light' font for the webpage */
-html{
-    font-family: Montserrat-Light;
+html {
+    font-family:  Montserrat-Regular;
     font-size: 16px;
     background-color: #F7F7FF;
-    margin: 0 auto;
 }
 
-.header{
-    background-color:#F7F7FF;
+.header {
+    background-color: #F7F7FF;
     height: auto;
 
 }
 
-body{
-    margin: 0.5rem;
+body {
+    width: 375px;
     font-family: Montserrat-Regular;
-    }
+    margin: 0 auto;
+}
+
+
 
 h1,
 h2,
-h4{
+h4 {
     font-family: Montserrat-Black;
     font: bold;
 }
 
-.drive{
+h1 {
+    font-size: 60px;
+    display: inline-flex;
+    margin: 0.5rem;
+}
+
+h2 {
+    font-size: 40px;
+    margin-left: auto;
+    padding: 10px;
+}
+
+h3 {
+    font-family: Montserrat-Regular;
+    margin-left: auto;
+    padding: 10px;
+}
+
+.logo {
+    width: 25%;
+    height: auto;
+    float: left;
+}
+
+.box p {
+    font-family: Montserrat-Regular;
+    font-size: 24px;
+    margin: 0.5rem;
+}
+
+
+.cf {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    background: #FFFF;
+    box-shadow: rgba(187, 187, 187, 1) 0 0px 20px -1px;
+    -webkit-box-shadow: rgba(187, 187, 187, 1) 0 0px 20px -1px;
+    border-radius: 11px;
+    -webkit-border-radius: 11px;
+}
+
+.cf p {
+    font-size: 14px;
+    display: inline;
+}
+
+
+.cf a {
+    font-size: 14px;
+    color: red;
+    text-decoration: none;
+    box-shadow: none;
+    background: none;
+    padding: 0;
+}
+
+
+.drive {
     background-color: #57EEAB;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 24px;
     text-align: center;
     padding: 15px;
     border: none;
+    box-shadow: none;
     border-radius: 11px;
     margin-top: 1rem;
-    margin-bottom: ;
+    margin-bottom: 1rem;
 }
 
-.calculate{
+.calculate {
     background-color: #FF8480;
     color: white;
     font-weight: bold;
@@ -211,38 +276,79 @@ h4{
     border: none;
     border-radius: 11px;
 }
- li{
+
+li {
+    
     list-style: none;
     padding: 5px;
 }
-input{
+
+input {
+    
     background-color: #F4F4F5;
     padding: 10px;
     border: none;
     border-radius: 11px;
+    margin-right: 1rem;
 }
 
 ::placeholder {
+
     color: #9B9B9B;
-    opacity: 1; /* Firefox */
-  }
-  
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color: #9B9B9B;
-  }
-  
-  ::-ms-input-placeholder { /* Microsoft Edge */
-   color: #9B9B9B;
-  }
-
-
-.body .cf{
-    float: left;
+    opacity: 1;
+    /* Firefox */
 }
 
-.f-contactform{
-   }
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #9B9B9B;
+}
 
-footer{
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #9B9B9B;
+}
+
+.f-contactform {
+    border-radius: 11px;
+    margin-bottom: 1rem;
+}
+
+.footer {
+    width: 100%;
     background-color: #FFFD8C;
+}
+
+.footer h4{
+    font-size: 18px;
+    padding: 1.5rem;
+}
+
+.footer p{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+
+.field-2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.field-2 .block:nth-child(1){
+    grid-column: 1/2;
+}
+.field-2 .block:nth-child(2){
+    grid-column: 2/4;
+}
+.field-2 .block:nth-child(3){
+    grid-column: 1/4;
+}
+
+.field-3{
+display: flex;
+justify-content: space-around;
+align-items: flex-end;
 }
