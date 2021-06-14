@@ -154,21 +154,13 @@ table {
     src: url('fonts/Montserrat-Light.ttf');
 }
 
-/* 
-       
-
-        font-family: Montserrat-Thin;
-        src: url('fonts/Montserrat-Thin.ttf'); */
-
-
 /*Mobile Styling*/
 /* For mobile phones: */
 
 /* Use the 'Montserrat-Light' font for the webpage */
 html {
-    font-family:  Montserrat-Regular;
-    font-size: 16px;
-    background-color: #F7F7FF;
+    font-family: Montserrat-Regular;
+    font-size: 16px;  
 }
 
 .header {
@@ -178,12 +170,11 @@ html {
 }
 
 body {
-    width: 375px;
+    width: 100%;
     font-family: Montserrat-Regular;
     margin: 0 auto;
+    background-color: #F7F7FF;
 }
-
-
 
 h1,
 h2,
@@ -214,6 +205,8 @@ h3 {
     width: 25%;
     height: auto;
     float: left;
+    margin-left: 10%;
+    
 }
 
 .box p {
@@ -222,11 +215,23 @@ h3 {
     margin: 0.5rem;
 }
 
+.box-1{
+    width: 80%;
+}
+
+.box-2{
+    width: 80%;
+}
+
+.box,
+.scooter{
+    margin: 0 auto;
+}
 
 .cf {
-    width: 100%;
+    width: 80%;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
     margin-left: auto;
     margin-right: auto;
     padding: 15px;
@@ -240,6 +245,8 @@ h3 {
 .cf p {
     font-size: 14px;
     display: inline;
+    margin-left: 0.2rem;
+   
 }
 
 
@@ -252,39 +259,48 @@ h3 {
     padding: 0;
 }
 
+button{
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 15px;
+    border: none;
+    border-radius: 11px;
+}
 
 .drive {
-    background-color: #57EEAB;
-    font-weight: bold;
-    font-size: 24px;
-    text-align: center;
-    padding: 15px;
-    border: none;
-    box-shadow: none;
-    border-radius: 11px;
+    background-color: #57EEAB; 
     margin-top: 1rem;
     margin-bottom: 1rem;
+    box-shadow: none;
 }
 
-.calculate {
+ .calculate {
+    width: 90%;
     background-color: #FF8480;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
     color: white;
-    font-weight: bold;
-    font-size: 1rem;
-    text-align: center;
-    padding: 15px;
-    border: none;
-    border-radius: 11px;
 }
+
+.hour,
+.city{
+   width: 85%;
+   margin-left: 1.5rem;
+   margin-right: 1.5rem;
+   margin-bottom: 0.5rem;
+}
+
 
 li {
-    
     list-style: none;
     padding: 5px;
 }
 
 input {
-    
     background-color: #F4F4F5;
     padding: 10px;
     border: none;
@@ -309,9 +325,47 @@ input {
     color: #9B9B9B;
 }
 
-.f-contactform {
+/* .f-contactform {
     border-radius: 11px;
     margin-bottom: 1rem;
+} */
+
+
+
+.footer h4 {
+    font-size: 18px;
+    padding: 1.5rem;
+}
+
+.footer p {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+
+.f-contactform .field-2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.field-2 .block:nth-child(1) {
+    flex-basis: 25%;
+}
+
+.field-2 .block:nth-child(2) {
+    flex-basis: 67%;
+}
+
+.field-2 .block:nth-child(3) {
+    flex-basis: 97%;
+}
+
+.field-3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 5%;
 }
 
 .footer {
@@ -319,36 +373,36 @@ input {
     background-color: #FFFD8C;
 }
 
-.footer h4{
-    font-size: 18px;
-    padding: 1.5rem;
-}
-
-.footer p{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-bottom: 1.5rem;
-}
 
 
-.field-2{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
-    grid-template-rows: repeat(2, 1fr);
+
+
+
+/****************************************************************************/
+/*******************Tablet Styling******************************************/
+/****************************************************************************/
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+
+    /* ***************set max width************************** */
+    body{
+        max-width: 768px;
+    }
 }
 
-.field-2 .block:nth-child(1){
-    grid-column: 1/2;
-}
-.field-2 .block:nth-child(2){
-    grid-column: 2/4;
-}
-.field-2 .block:nth-child(3){
-    grid-column: 1/4;
+/****************************************************************************/
+/*******************Desktop Styling******************************************/
+/****************************************************************************/
+
+@media only screen and (min-width: 1280px) {
+    /* For desktop: */
+.footer{
+    width: 100%;    
 }
 
-.field-3{
-display: flex;
-justify-content: space-around;
-align-items: flex-end;
+
+      
+
+
 }
