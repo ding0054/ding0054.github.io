@@ -327,7 +327,7 @@ button {
     margin-top: 0.5rem;
     margin-bottom: 1rem;
     /* we need remove box-shadow, because this key is in the from and we were set it */
-    box-shadow: none;   
+    box-shadow: none;
     text-align: center;
 }
 
@@ -351,18 +351,19 @@ input {
 }
 
 /* Sets the position of the checkbox(The small squares) */
-.checkbox{
+.checkbox {
     /*Keep the small squares at same line with the text  */
-    display:inline;
-    width:fit-content;
+    display: inline;
+    width: fit-content;
     /* Keep position on the left */
     float: left;
     padding-top: 0.5rem;
     margin-left: 1rem;
 }
+
 .agreetext {
-    display:inline;
-    width:fit-content;
+    display: inline;
+    width: fit-content;
     float: left;
     padding-top: 0.2rem;
     margin-left: 0.1rem;
@@ -415,9 +416,10 @@ h4 {
 
 }
 
-.cf{
+.cf {
     display: flex;
     flex-direction: column;
+}
 
 /* field-2 inculd hour city and calculate three elements 
     .f-contactform is treated as their container*/
@@ -432,7 +434,6 @@ h4 {
     /* Aligns flex items along the cross axis of the current line of the flex container. 
         there we use center to center all elements*/
     align-items: center;
-
 }
 
 /* set first block size, first block is "hour" */
@@ -497,7 +498,7 @@ h4 {
 
     }
 
-        /* only set h1 style:"Want to be your own boss?" */
+    /* only set h1 style:"Want to be your own boss?" */
     h1 {
         /* 5rem = 80px */
         font-size: 5rem;
@@ -517,7 +518,7 @@ h4 {
         padding: 0.625rem;
     }
 
-    .calculate{
+    .calculate {
         width: max-content;
     }
 
@@ -595,7 +596,7 @@ h4 {
         /* controlling h1's margin, top right bottom lefte margin 0.5rem(1 px)*/
         margin: 0.0625rem;
     }
-    
+
     /* only set h3 style: "Enter your info below." */
     h3 {
         /* 24px = 1.5rem */
@@ -606,7 +607,7 @@ h4 {
         padding: 0.625rem;
     }
 
-    .calculate{
+    .calculate {
         width: max-content;
     }
 
@@ -696,17 +697,17 @@ h4 {
 
     /* Move the Facebook icon to 1 step for right 
         1 is moving to the right, -1 is moving to the left*/
-    .field-3 .block:nth-child(1){
+    .field-3 .block:nth-child(1) {
         order: 1;
     }
 
     /* Move the instagram icon as the first order*/
-    .field-3 .block:nth-child(2){
+    .field-3 .block:nth-child(2) {
         order: 0;
     }
 
     /* Move the linkedin icon as the last order*/
-    .field-3 .block:nth-child(4){
+    .field-3 .block:nth-child(4) {
         order: 1;
     }
 
