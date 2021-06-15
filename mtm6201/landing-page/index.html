@@ -9,12 +9,19 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="body">
+    <!-- sign class named header -->
     <header class="header">
+        <!-- import image from local path -->
         <img class="logo" src="images/logo/logo.png" alt="logo">
     </header>
 
-    <main>
+    <!-- sign class named main 
+        In main class I declare three div boxes.It's easy to change the layout when you're typesetting in CSS-->
+    <main class="main">
+
+        <!--The first box. Box is named for grid typesetting. I named box-1 to set the box separately  
+            The box contains an h1 and a <P> element-->
         <div class="box box-1">
             <h1>
                 Want to be your own boss?
@@ -22,61 +29,74 @@
             <p>
                 Start today and make up to $30/hr driving your own vehicle with Dash!
             </p>
+        </div><!-- end of box-1 -->
 
-        </div>
 
+        <!--The second box. Box is named for grid typesetting. I named box-2 to set the box separately 
+            The box contains scooter image -->
         <div class="box box-2">
+            <!-- import image from local path -->
             <img class="scooter" src="images/bg-image/scooter.svg" alt="bg-image">
-        </div>
+        </div><!-- end of box-2 -->
 
+
+        <!--The last box. Box is named for grid typesetting. I named box-3 to set the box separately 
+            The box contains h2,h3, and a form element -->
         <div class="box box-3">
 
+            <!-- There are many DIV elements in the table for convenient typesetting in CSS -->
             <form class="cf">
-
-                <h2>
-                    Apply Now
-                </h2>
+                <h2>Apply Now</h2>
                 <h3>Enter your info below.</h3>
 
+                <!-- Each input is set to a separate module.
+                     Check Box is a separate module
+                     Link is a separate module -->
+                <div><input type="text" id="input-fname" placeholder="First name"></div>
+                <div><input type="text" id="input-lname" placeholder="Last name"></div>
+                <div><input type="email" id="input-email" placeholder="Email Address"></div>
+                <div><input type="tel" id="telNo" placeholder="Phone number"></div>
 
-                <!-- <div class="cf body"> -->
-                <ul>
-                    <li><input type="text" id="input-fname" placeholder="First name"></li>
-                    <li><input type="text" id="input-lname" placeholder="Last name"></li>
-                    <li><input type="email" id="input-email" placeholder="Email Address"></li>
-                    <li><input type="tel" id="telNo" placeholder="Phone number"></li>
+                <!-- Declare checkbox div -->
+                <div><input class="checkbox" type="checkbox" id="agreement" name="agreement1">
+                    <label class="agreetext" for="agreement"><span></span> I agree to dash terms</label>
+                </div>
 
-                    <li><input type="checkbox" id="agreement" name="agreement" value="agreement">
-                        <label class="agreetext" for="agreement"> I agree to dash terms</label>
-                        <!-- </div>  -->
-                    </li>
-                    <li> <button Class="cf drive" type="button">DRIVE WITH US</button></li>
+                <!-- Declare button div -->
+                <div><button Class="cf drive" type="button">DRIVE WITH US</button></div>
 
-                    <!-- <div class="cf apply"> -->
-                    <li>
-                        <p>Already applied?</p>
-                        <a class="cf link" href="aplication.html">Check your application status here</a>
-                        <!-- </div> -->
-                    </li>
-                </ul>
+                <!-- Declare link div  -->
+                <div>
+                    <p>Already applied?<a class="cf link" href="aplication.html">Check your application status here</a>
+                    </p>
+                </div>
+
             </form>
-        </div>
-    </main>
+            <!-- end of form -->
 
+        </div><!-- end of box-3 -->
+
+
+    </main>
+    <!-- end of main -->
+
+    <!-- The Footer is also divided into three sections for CSS layout -->
     <footer class="footer">
 
+        <!-- Text part -->
         <div class="field field-1">
             <h4>See how much you earn with Dash.</h4>
             <p>how many hours do you want to drive with us this week?</p>
         </div>
 
+        <!-- Hour City and Calculate, inside this part separate each element -->
         <div class="field field-2">
             <form class="f-contactform">
-                <div class="block hour">
+                <div class="block">
                     <input type="text" id="input-hours" placeholder="Hours">
                 </div>
 
-                <div class="block city">
+                <div class="block">
                     <input type="text" id="input-city" placeholder="City">
                 </div>
 
@@ -86,27 +106,30 @@
             </form>
         </div>
 
+        <!-- icons part -->
         <div class="field field-3">
             <div class="block">
                 <img src="images/icons/facebook.svg" alt="facebook" />
             </div>
 
             <div class="block">
-                <img src="images/icons/instagram.svg" alt="instagram"/>
+                <img src="images/icons/instagram.svg" alt="instagram" />
             </div>
 
             <div class="block">
-                <img src="images/icons/twitter.svg" alt="twitter"/>
+                <img src="images/icons/twitter.svg" alt="twitter" />
             </div>
 
             <div class="block">
-                <img src="images/icons/linkedin.svg" alt="linkedin"/>
+                <img src="images/icons/linkedin.svg" alt="linkedin" />
             </div>
         </div>
 
     </footer>
+    <!-- end of footer -->
 
 </body>
-
+<!-- end of body -->
 
 </html>
+<!-- end of html -->
