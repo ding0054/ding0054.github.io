@@ -46,27 +46,29 @@
 
             <!-- There are many DIV elements in the table for convenient typesetting in CSS -->
             <form class="cf">
-                <h2>Apply Now</h2>
-                <h3>Enter your info below.</h3>
-
+                <div class="f">
+                    <h2>Apply Now</h2>
+                    <h3>Enter your info below.</h3>
+                </div>
                 <!-- Each input is set to a separate module.
                      Check Box is a separate module
                      Link is a separate module -->
-                <div><input type="text" id="input-fname" placeholder="First name"></div>
-                <div><input type="text" id="input-lname" placeholder="Last name"></div>
-                <div><input type="email" id="input-email" placeholder="Email Address"></div>
-                <div><input type="tel" id="telNo" placeholder="Phone number"></div>
+                <div class="f"><input type="text" id="input-fname" placeholder="First name"></div>
+                <div class="f"><input type="text" id="input-lname" placeholder="Last name"></div>
+                <div class="f"><input type="email" id="input-email" placeholder="Email Address"></div>
+                <div class="f"><input type="tel" id="telNo" placeholder="Phone number"></div>
 
                 <!-- Declare checkbox div -->
-                <div><input class="checkbox" type="checkbox" id="agreement" name="agreement1">
+                <div class="f checkline">
+                    <input class="checkbox" type="checkbox" id="agreement" name="agreement1">
                     <label class="agreetext" for="agreement"><span></span> I agree to dash terms</label>
                 </div>
 
                 <!-- Declare button div -->
-                <div><button Class="cf drive" type="button">DRIVE WITH US</button></div>
+                <div class="f"><button Class="cf drive" type="button">DRIVE WITH US</button></div>
 
                 <!-- Declare link div  -->
-                <div>
+                <div class="f">
                     <p>Already applied?<a class="cf link" href="aplication.html">Check your application status here</a>
                     </p>
                 </div>
@@ -117,7 +119,7 @@
             </div>
 
             <div class="block">
-                <img src="images/icons/twitter.svg" alt="twitter" />
+                <img src="images/icons/twitter.svg" alt="twitter"/>
             </div>
 
             <div class="block">

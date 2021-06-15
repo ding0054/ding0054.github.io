@@ -135,10 +135,9 @@ table {
 }
 
 /****************************************************************************/
-/*************************** Customers style *******************************/
+/*************************** Mobile style *******************************/
 /****************************************************************************/
 
-/*Mobile Styling*/
 
 /* Import the local font data: Montserrat-Black via src：url */
 @font-face {
@@ -167,6 +166,7 @@ html {
     font-family: Montserrat-Regular;
     /* set font size to 1rem(16px) */
     font-size: 1rem;
+    background-color: #F7F7FF;
 }
 
 /* set header style by using class name which you defined in html file */
@@ -175,7 +175,6 @@ html {
     background-color: #F7F7FF;
     /* set header height is automatically*/
     height: auto;
-
 }
 
 /* set body detail*/
@@ -249,12 +248,12 @@ h3 {
 }
 
 /* set .box-2 width accounted for 80% of the total  
-    box-1 is the apply now whole from*/
+    box-2 is the scooter image*/
 .box-2 {
     width: 80%;
 }
 
-/* keep box elements and scooter image at the page of center */
+/* keep all box elements and scooter image at the page of center */
 .box,
 .scooter {
     margin: 0 auto;
@@ -274,8 +273,8 @@ h3 {
     box-shadow: rgba(187, 187, 187, 1) 0 0px 20px -1px;
     -webkit-box-shadow: rgba(187, 187, 187, 1) 0 0px 20px -1px;
     /* Set the border to rounded corners*/
-    border-radius: 11px;
-    -webkit-border-radius: 11px;
+    border-radius: 0.688rem;
+    -webkit-border-radius: 0.688rem;
 }
 
 /* only set paragraphs detail in .cf class*/
@@ -292,6 +291,7 @@ h3 {
     here we need remove box-shadow, background and padding
     that we set in .cf*/
 .cf a {
+    display: inline;
     /* set font size */
     font-size: 0.875rem;
     color: red;
@@ -311,26 +311,29 @@ button {
     width: 100%;
     font-weight: bold;
     font-size: 1.5rem;
-    text-align: center;
+    /* text-align: center; */
     padding: 0.9375rem;
     /* no border needed, remove border */
     border: none;
     /* Set the border to rounded corners */
-    border-radius: 11px;
+    border-radius: 0.688rem;
 }
 
 /* only set "drive with us" button - Separate requirements*/
 .drive {
+    /* Press the button width to fill the Form */
     width: 100%;
     background-color: #57EEAB;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-bottom: 1rem;
     /* we need remove box-shadow, because this key is in the from and we were set it */
-    box-shadow: none;
+    box-shadow: none;   
+    text-align: center;
 }
 
 /* only set "calculate" button - Separate requirements */
 .calculate {
+    /* Press the button width to follow the text */
     width: 100%;
     background-color: #FF8480;
     color: white;
@@ -340,22 +343,29 @@ button {
 /* set all input element detail, Only set their commonality*/
 input {
     background-color: #F4F4F5;
-    width: 93%;
+    width: 90%;
     padding: 0.625rem;
     border: none;
-    border-radius: 11px;
+    border-radius: 0.688rem;
     margin: 0.5rem;
 }
 
-/*  */
-.cf .checkbox {
+/* Sets the position of the checkbox(The small squares) */
+.checkbox{
+    /*Keep the small squares at same line with the text  */
+    display:inline;
+    width:fit-content;
+    /* Keep position on the left */
     float: left;
-    padding: 0;
-    margin: 0;
+    padding-top: 0.5rem;
+    margin-left: 1rem;
 }
-
-.cf .agreetext {
+.agreetext {
+    display:inline;
+    width:fit-content;
     float: left;
+    padding-top: 0.2rem;
+    margin-left: 0.1rem;
 }
 
 /* set all placeholder elements color to #9B9B9B */
@@ -404,6 +414,10 @@ h4 {
     padding: 0.83rem;
 
 }
+
+.cf{
+    display: flex;
+    flex-direction: column;
 
 /* field-2 inculd hour city and calculate three elements 
     .f-contactform is treated as their container*/
@@ -483,6 +497,30 @@ h4 {
 
     }
 
+        /* only set h1 style:"Want to be your own boss?" */
+    h1 {
+        /* 5rem = 80px */
+        font-size: 5rem;
+        /* Displays an element as an inline-level flex container */
+        display: inline-flex;
+        /* controlling h1's margin, top right bottom lefte margin 0.5rem(1 px)*/
+        margin: 0.0625rem;
+    }
+
+    /* only set h3 style: "Enter your info below." */
+    h3 {
+        /* 30px = 1.875rem */
+        font-size: 1.875rem;
+        font-family: Montserrat-Regular;
+        margin-left: auto;
+        /* Shorthand property to set 0.625rem the thickness of the padding area. */
+        padding: 0.625rem;
+    }
+
+    .calculate{
+        width: max-content;
+    }
+
     /* field-2 inculd hour city and calculate three elements 
     .f-contactform is treated as their container
      Rearrange oneself*/
@@ -548,6 +586,30 @@ h4 {
         margin-left: 3.5rem;
     }
 
+    /* only set h1 style:"Want to be your own boss?" */
+    h1 {
+        /* 5rem = 80px */
+        font-size: 5rem;
+        /* Displays an element as an inline-level flex container */
+        display: inline-flex;
+        /* controlling h1's margin, top right bottom lefte margin 0.5rem(1 px)*/
+        margin: 0.0625rem;
+    }
+    
+    /* only set h3 style: "Enter your info below." */
+    h3 {
+        /* 24px = 1.5rem */
+        font-size: 1.5rem;
+        font-family: Montserrat-Regular;
+        margin-left: auto;
+        /* Shorthand property to set 0.625rem the thickness of the padding area. */
+        padding: 0.625rem;
+    }
+
+    .calculate{
+        width: max-content;
+    }
+
     /* Think of .main as a container and set the size and format of the container 
         there are three box contained
         */
@@ -563,7 +625,8 @@ h4 {
         grid-template-rows: repeat(5, 1fr);
     }
 
-    /* position of the first box inside .main  */
+    /* position of the first box inside .main  
+        h1 and <p>*/
     .main .box:nth-child(1) {
         /* column position from line 1 to line 5 */
         grid-column: 1/5;
@@ -618,6 +681,33 @@ h4 {
         grid-column: 9/11;
         grid-row: 2/4;
         align-items: center;
+    }
+
+    /* .field-3 inculd 4 icons */
+    .field-3 {
+        display: flex;
+        /*aligns the flexible container's items 
+        Items are positioned in the center of the container */
+        justify-content: center;
+        /*align the items vertically. 
+        Items are positioned at the end of the container */
+        align-items: flex-end;
+    }
+
+    /* Move the Facebook icon to 1 step for right 
+        1 is moving to the right, -1 is moving to the left*/
+    .field-3 .block:nth-child(1){
+        order: 1;
+    }
+
+    /* Move the instagram icon as the first order*/
+    .field-3 .block:nth-child(2){
+        order: 0;
+    }
+
+    /* Move the linkedin icon as the last order*/
+    .field-3 .block:nth-child(4){
+        order: 1;
     }
 
 }
