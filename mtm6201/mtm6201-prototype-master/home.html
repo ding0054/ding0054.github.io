@@ -8,18 +8,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/931c767dbc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/home.css">
     <title>Prototype-XiaoyuDing</title>
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
+        <header>
+            <div class="nav-size">
             <div class="block logo">
-                <img src="images/logo.png" alt="logo">
+                <img class="logo" src="images/logo.png" alt="logo">
             </div>
             <div class="block nav">
                 <ul>
@@ -39,44 +40,47 @@
             </div>
             <div class="bolck login">
                 <input class="search" type="text" placeholder="Search" name="search">
-                <button class="search" type="submit"></button>
+                <button class="btn search" type="submit"><i class="fas fa-search"></i></button>
             </div>
+        </div>
         </header>
 
         <main>
+            
             <section class="banner">
                 <div class="b">
-                    <img src="images/banner.jpg" alt="banner">
+                    <img class="b-img" src="images/banner.jpg" alt="banner">
                 </div>
                 <div class="b">
                     <h1>Summer Offer! </h1>
                     <p>Try new flavors <br>
                         new products 25% OFF!!</p>
                 </div>
-                <div class="b">
+                <div class="btn">
                     <input type="submit" class="btn order" value="Order Now">
                 </div>
             </section>
 
+            <div class="container">
             <section class="featured">
                 <h2>FEATURED</h2>
                 <div class="iteam">
-                    <img src="images/treats.png" alt="treats">
+                    <img class="treats" src="images/treats.png" alt="treats">
                 </div>
                 <div class="iteam">
-                    <img src="images/Bcake.png" alt="brithday cake">
+                    <img  class="b-cake" src="images/Bcake.png" alt="brithday cake">
                 </div>
                 <div class="iteam">
-                    <img src="images/spooning.png" alt="spooning">
+                    <img  class="spooning" src="images/spooning.png" alt="spooning">
                 </div>
                 <div class="iteam">
-                    <img src="images/cone.png" alt="cone">
+                    <img class="cone" src="images/cone.png" alt="cone">
                 </div>
                 <div class="iteam">
-                    <img src="images/sundae.png" alt="sundae">
+                    <img class="sundae" src="images/sundae.png" alt="sundae">
                 </div>
                 <div class="iteam">
-                    <img src="images/cone2.png" alt="cone2">
+                    <img class="cone2" src="images/cone2.png" alt="cone2">
                 </div>
             </section>
 
@@ -101,8 +105,9 @@
                     <img src="images/try-new2.png" alt="try-new2">
                 </div>
             </section>
+        </div>
         </main>
-    </div>
+    
 
 
     <footer>
