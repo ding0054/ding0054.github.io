@@ -12,39 +12,52 @@ header{
     background-color:#FFFFFF;
     width: 100%;
     height: auto;
-    margin-bottom: 1rem;
+}
+
+section{
+    margin-bottom: 5%;
 }
 
 .container{
-    width: 85%;
+    width: 100%;
     /* Center Container */
 	margin: 0 auto;
     padding-top: 5%;
+    padding-left: 8%;
+    padding-bottom: 3%;
     background-color:#E5E6E7;
 }
 
 .logo{
-    margin: 1rem;/*16px */
-    
+    margin: 1rem;/*16px */   
 }
 
 li{
+    width: 100%;
+    font-size: 0.5rem;
     list-style: none;
-    margin: 0.3 rem;/*5px*/
+    margin: 0 auto;
     text-align: center;
 }
 
 a{
+    width: 100%;
     text-decoration: none;
-    padding: 0.3 rem;/*5px*/
+    
     font-size: 1.5rem;
     color: black;
+    margin: 0 auto;
 }
 
 a:hover {
+    width: 100%;
     background-color:#C78174;
     margin: 0.3 rem;/*5px*/
     color: #FFFFFF;
+}
+
+.login{
+    display: inline;
 }
 
 .btn{
@@ -69,9 +82,10 @@ a:hover {
     width: 100%;
     height: auto;
     padding-bottom: 8%;
+    margin-bottom: 0%;
 }
 
-div .b-img{
+ .b-img{
 width: 80%;
 margin-top: 10%;
 margin-left: 10%;
@@ -100,20 +114,441 @@ h2{
 }
 
 .iteam{
-    background-image: url(small-bg.jpg);
+margin-bottom: 8%;
 }
+
 .treats,
 .b-cake,
 .spooning,
 .cone,
 .sundae,
-.cone2{ 
-  width: 100%;
-  margin: 0 auto;
+.cone2{
+    width: 90%;
+    height: 90%;
+    background: url(../images/small-bg.jpg) no-repeat;
+    background-size:cover;
+    padding-bottom: 5%;
+    border-radius: 1rem;
 }
-    
-/*font-family: 'Lobster', cursive;*/
+
+.new1,
+.new2{
+    width: 90%;
+    background-color: #FFFFFF;
+}
+
+.chocolate,
+.yogurt{
+    width: 90%;
+    height: auto;
+    background-color: #C78174;
+    padding-top: 5%;
+    padding-bottom: 8%;
+
+}
+
+.chocolate p,
+.yogurt p{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.625rem; /*26px*/   
+    font-weight: 500;
+}
+
+.trynew{
+    display: flex;
+    flex-direction: column;
+}
+.trynew .new:nth-child(4){
+    order: 2;
+}
+
 footer .container{
     background-color:#C78174;
     width: 100%;
+    height: auto;
+}
+
+h3{
+    font-size: 1.625rem; /*26px*/ 
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+input, .go, .search{
+    width: fit-content;
+    font-size: 1rem;/*18px*/
+    padding: 0.3rem;
+    border-radius: 0.5rem; 
+    display: inline; 
+}
+input{
+    width: 85%;
+}
+
+.search{
+    display: inline;
+    padding: 0.5rem;
+}
+
+.go{
+   margin-left: 0.5rem;
+}
+
+.icons{
+        display: flex;
+        /*aligns the flexible container's items 
+        Items are positioned in the center of the container */
+        justify-content:flex-start;
+        /*align the items vertically. 
+        Items are positioned at the end of the container */
+        align-items: flex-end;
+        margin-top: 3%;
+        
+}
+
+.icons .block{
+    margin: 1.5rem;
+
+}
+
+.copyright{
+    display: flex;
+    justify-content:center;
+    font-size: 1.125rem;/*18px*/
+}
+
+.nav{
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+}
+
+.nav .block:nth-child(1){
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-left: 0%;
+}
+
+.nav .block:nth-child(2){
+    width:100%;
+    grid-column: 4/7;
+    grid-row: 1/2;
+}
+
+.nav .block:nth-child(3){
+    width:100%;
+    grid-column: 3/5;
+    grid-row: 2/3;
+    margin: 0 auto;
+}
+
+/****************************************************************************/
+/*******************Tablet Styling******************************************/
+/****************************************************************************/
+
+/* Set the flat screen size of tablet */
+@media only screen and (min-width: 768px) {
+
+    li{
+        width: 100%;
+        list-style: none;
+        margin-left: 10%;
+        text-align: center;
+        display: inline;
+    }
+    
+    a{
+        width: 100%;
+        height: auto;
+        text-decoration: none;
+        display: inline;
+        font-size: 1rem;
+        font-weight: 700;
+        color: black;
+        margin: 0 auto;
+    }
+    
+    a:hover {
+        width: 100%;
+        display: inline;
+        background-color:#C78174;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 0.3 rem;/*5px*/
+        color: #FFFFFF;
+    }
+
+    .nav{
+        width: 85%;
+        height: auto;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+    
+    .nav .block:nth-child(1){
+        width: 100%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-left: 0%;
+    }
+    
+    .nav .block:nth-child(2){
+        width:100%;
+        grid-column: 10/13;
+        grid-row: 1/2;
+    }
+    
+    .nav .block:nth-child(3){
+        width:100%;
+        grid-column: 4/10;
+        grid-row: 1/2;        
+    }
+
+    .banner{
+        display: grid;
+        height: auto;
+        margin: 0 auto;
+        width: 100%;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        align-items: center;
+        padding-bottom: 0%;
+    }
+
+    .banner .b:nth-child(1){
+        width: 100%;
+        height: 90%;
+        margin: 0 auto;
+        grid-column: 2/5;
+        grid-row: 2/6;
+    }
+    .banner .b:nth-child(2){
+        width: 100%;
+        height: auto;
+        grid-column: 5/8;
+        grid-row: 2/5;
+    }
+
+    .banner .b:nth-child(3){
+        width: fit-content;
+        height: auto;
+        grid-column: 5/8;
+        grid-row: 5/6;
+    }
+
+    .container{
+        padding-left: 0%;
+        width: 100%;
+    }
+
+    .featured{
+        display: grid;
+        height: auto;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;      
+        grid-gap:0.6rem; 
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .featured .iteam:nth-child(1){
+        width: 100%;
+        height:  auto;
+        margin: 0 auto;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .featured .iteam:nth-child(2){
+        width: 100%;
+        height:  auto;
+        margin: 0 auto;
+        margin-left: 0;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .featured .iteam:nth-child(3){
+        width: 100%;
+        height:  auto;
+        margin: 0 auto;
+        margin-left: 0;
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .featured .iteam:nth-child(4){
+        width: 100%;
+        height:  auto;
+        margin: 0 auto;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .featured .iteam:nth-child(5){
+        width: 100%;
+        height:  auto;
+        margin: 0 auto;
+        margin-left: 0;
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .featured .iteam:nth-child(6){
+        width: 100%;
+        height:  auto;
+        margin: 0 auto;
+        margin-left: 0;
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    .try{
+        display: grid;
+        height: auto;
+        margin: 0 auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;  
+        margin-left: 3%;
+        margin-right: 3%;    
+    }
+    .try .new:nth-child(1){
+        width: 100%;
+        height: 100%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .try .new:nth-child(2){
+        width: 100%;
+        height: 100%;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .try .new:nth-child(3){
+        width: 100%;
+        height: 100%;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .try .new:nth-child(4){
+        width: 100%;
+        height: 100%;
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .f{
+        width: 85%;
+        display: grid;
+        height: auto;
+        margin: 0 auto;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        align-items: center;   
+    }
+
+    .f .fset:nth-child(1){
+        width: 100%;
+        height: 100%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .f .fset:nth-child(2){
+        width: 100%;
+        height: 100%;
+        grid-column: 5/7;
+        grid-row: 1/2;
+    }
+
+    .icons{
+    display: flex;
+    justify-content:center;
+    }
+
+    /****************************************************************************/
+/*******************Desktop Styling******************************************/
+/****************************************************************************/
+
+/* Set the flat screen size of Desktop */
+@media only screen and (min-width: 1280px) {
+    /* For desktop: */
+    h1{
+        font-size: 3rem;/*48px*/
+    }
+
+    a{
+        font-size: 1.5rem;   
+    }
+    
+    .banner{
+        display: grid;
+        height: auto;
+        margin: 0 auto;
+        width: 100%;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        align-items: center;
+        padding-bottom: 0%;
+    }
+
+    .banner .b:nth-child(1){
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+    .banner .b:nth-child(2){
+        width: 100%;
+        height: auto;
+        grid-column: 5/8;
+        grid-row: 1/2;
+    }
+
+    .banner .b:nth-child(3){
+        width: fit-content;
+        height: auto;
+        grid-column: 8/10;
+        grid-row: 1/2;
+    }
+
+    .f{
+        width: 85%;
+        display: grid;
+        height: auto;
+        margin: 0 auto;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        align-items: center;   
+    }
+
+    .f .fset:nth-child(1){
+        width: 100%;
+        height: 100%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .f .fset:nth-child(2){
+        width: 100%;
+        height: 100%;
+        grid-column: 3/5;
+        grid-row: 1/2;
+    }
+
+    .icons{
+    display: flex;
+    justify-content:flex-end;
+    margin-right: 8%;
+    margin-left: 8%; 
+    }
+}
+
 }

@@ -5,82 +5,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/931c767dbc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/contact.css">
     <title>Prototype-XiaoyuDing</title>
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="block logo">
-                <img src="images/logo.png" alt="logo">
-            </div>
-            <div class="block nav">
-                <ul>
-                    <li>
-                        <a href="home.html" class="home">Home</a>
-                    </li>
-                    <li>
-                        <a href="menu.html" class="menu">Menu</a>
-                    </li>
-                    <li>
-                        <a href="about.html" class="about">About</a>
-                    </li>
-                    <li>
-                        <a href="contact.html" class="connect">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="bolck login">
-                <input class="search" type="text" placeholder="Search" name="search">
-                <button class="search" type="submit"><i class="fas fa-search"></i>></button>
-            </div>
-        </header>
+    <header class="nav">
+        <div>
+            <img class="block logo" src="images/logo.png" alt="logo">
+        </div>
 
-        <main>
-            <section class="form">
-                <form>
-                    <div class="f"><input type="text" id="input-fname" placeholder="Full Name"></div>
+        <div class="block login">
+            <input class="input-search" type="text" placeholder="Search" name="search">
+            <button class="btn search" type="submit"><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="block">
+            <ul>
+                <li>
+                    <a href="home.html" class="home">Home</a>
+                </li>
+                <li>
+                    <a href="menu.html" class="menu">Menu</a>
+                </li>
+                <li>
+                    <a href="about.html" class="about">About</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="connect">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="m">
+        <section class="section">
+            <div class="box box-1">
+
+                <!-- There are many DIV elements in the table for convenient typesetting in CSS -->
+                <form class="cf">
+                    <!-- f1 -->
+                    <div class="f">
+                        <h1>Contact US</h1>
+                    </div>
+                    <!-- Each input is set to a separate module.
+                             Check Box is a separate module
+                             Link is a separate module -->
+
+                    <!-- f2 -->
+                    <div class="f"><input type="text" id="input-fname" placeholder="First name"></div>
+                    <!-- f3 -->
+                    <div class="f"><input type="text" id="input-lname" placeholder="Last name"></div>
                     <!-- f4 -->
-                    <div class="f"><input type="email" id="input-email" placeholder="Email Address"></div>
-                    <!-- f5 -->
-                    <div>
-                        <textarea class="textarea" name="message" id="message" placeholder="Message"></textarea>
+                    <div class="f">
+                        <textarea class="textarea" name="message" id="message" placeholder="message"></textarea>
+                    </div>
+
+                    <div class="f">
+                        <button Class="btn send" id="send" type="button">SEND</button>
                     </div>
                 </form>
-            </section>
+                <!-- end of form -->
+            </div><!-- end of box-1 -->
+        </section>
 
-            <section class="map">
+        <section class="section">
+            <div class="location">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5607.915258700108!2d-75.75914377318216!3d45.349667566398914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0722395fc63d%3A0x35c46b5ff47a522!2sAlgonquin%20College%2C%201385%20Woodroffe%20Ave%2C%20Nepean%2C%20ON%20K2G%203G7!5e0!3m2!1szh-CN!2sca!4v1617743562529!5m2!1szh-CN!2sca"
                     width="100%" height="400" style="border: none;">
                 </iframe>
-                <input class="search" type="text" placeholder="Search" name="search">
-                <button class="btn go" type="submit">GO</button>
-            </section>
-        </main>
+            </div>
+        </section>
     </div>
+    </main>
 
     <footer>
-        <div class="container">
-            <div class="fset">
-                <h3>Business hours</h3>
-                <p>Mon-Fri 11-11</p>
-                <p>Sat-Sun 9-10</p>
+        <div class="box box-2">
+            <div class="f">
+                <div class="fset">
+                    <h3>Business hours</h3>
+                    <p>Mon-Fri 11-11</p>
+                    <p>Sat-Sun 9-10</p>
+                </div>
+                <div class="fset">
+                    <h3>Find Location</h3>
+                    <input class="search" type="text" placeholder="Search" name="search">
+                    <button class="btn go" type="submit">GO</button>
+                </div>
             </div>
-            <div class="fset">
-                <h3>Find Location</h3>
-                <input class="search" type="text" placeholder="Search" name="search">
-                <button class="btn go" type="submit">GO</button>
-            </div>
-            <div class="fset icons">
+
+            <div class="icons">
                 <div class="block">
                     <img src="images/icons/facebook.svg" alt="facebook" />
                 </div>
@@ -101,6 +124,7 @@
             <div>
                 <p class="copyright">&copy;Copyright MOODICECREAM, 2021</p>
             </div>
+
         </div>
     </footer>
 
