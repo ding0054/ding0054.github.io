@@ -205,7 +205,7 @@ footer .search {
     margin: 0 auto;
 }
 
-.featured {
+.featured, .img, img{
     width: 85%;
     height: auto;
     margin: 0 auto;
@@ -215,7 +215,6 @@ footer .search {
     padding-bottom: 2%;
     background-color: #E5E6E7;
 }
-
 .img:hover{
     background: url(../images/small-bg.jpg) no-repeat;
     box-shadow: rgba(187, 187, 187, 1) 0 0px 20px -1px;
