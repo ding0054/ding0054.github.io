@@ -41,18 +41,22 @@ li {
 a {
     width: 100%;
     text-decoration: none;
-
     font-size: 1.5rem;
     color: black;
     margin: 0 auto;
+    font-weight: 700;
 }
 
 a:hover {
     width: 100%;
     background-color: #C78174;
-    margin: 0.3rem;
+    padding: 0.5rem;
+    margin: 3%;
     /*5px*/
     color: #FFFFFF;
+    transform: scale(1.5);
+    border-radius: 0.688rem;
+    box-shadow: rgb(8, 8, 8) 0 0px 20px -1px;
 }
 
 .login {
@@ -116,8 +120,25 @@ h2 {
     margin-left: 10%;
 }
 
+@keyframes wave{
+    from { transform: none; }
+    to { transform: scale(1.8); 
+    }
+  }
+
+.b .btn{
+  animation-name: wave;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
 .iteam {
     margin-bottom: 8%;
+}
+
+.iteam:hover{
+    transform: scale(1.05);
+    box-shadow: rgb(8, 8, 8) 0 0px 20px -1px;
 }
 
 .treats,
@@ -178,7 +199,7 @@ footer .container {
 h3 {
     font-size: 1.625rem;
     /*26px*/
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 0.5rem;
 }
 

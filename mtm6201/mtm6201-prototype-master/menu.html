@@ -5,101 +5,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/931c767dbc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/menu.css">
     <title>Prototype-XiaoyuDing</title>
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="block logo">
-                <img src="images/logo.png" alt="logo">
-            </div>
-            <div class="block nav">
-                <ul>
-                    <li>
-                        <a href="home.html" class="home">Home</a>
-                    </li>
-                    <li>
-                        <a href="menu.html" class="menu">Menu</a>
-                    </li>
-                    <li>
-                        <a href="about.html" class="about">About</a>
-                    </li>
-                    <li>
-                        <a href="contact.html" class="connect">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="bolck login">
-                <input class="search" type="text" placeholder="Search" name="search">
-                <button class="search" type="submit"><i class="fas fa-search"></i>></button>
-            </div>
-        </header>
+    <header class="nav">
+        <div>
+            <img class="block logo" src="images/logo.png" alt="logo">
+        </div>
 
-        <main>
-            <section class="banner">
-                <ul>
-                    <il>ALL</il>
-                    <il>TREATS</il>
-                    <il>SPOONING</il>
-                    <il>SUNDAES</il>
-                    <il>CONE</il>
-                    <il>CAKES</il>
-                </ul>
-            </section>
+        <div class="block login">
+            <input class="input-search" type="text" placeholder="Search" name="search">
+            <button class="btn search" type="submit"><i class="fas fa-search"></i></button>
+        </div>
 
-            <section class="featured">
+        <div class="block">
+            <ul>
+                <li>
+                    <a href="home.html" class="home">Home</a>
+                </li>
+                <li>
+                    <a href="menu.html" class="menu">Menu</a>
+                </li>
+                <li>
+                    <a href="about.html" class="about">About</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="connect">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </header>
 
-                <div class="iteam">
-                    <img src="images/treats.png" alt="treats">
-                    <h3>TREATS</h3>
-                </div>
-                <div class="iteam">
-                    <img src="images/Bcake.png" alt="brithday cake">
-                    <h3>BRIGHTDAY CAKES</h3>
-                </div>
-                <div class="iteam">
-                    <img src="images/spooning.png" alt="spooning">
-                    <h3>SPOONING</h3>
-                </div>
-                <div class="iteam">
-                    <img src="images/cone.png" alt="cone">
-                    <h3>CONE</h3>
-                </div>
-                <div class="iteam">
-                    <img src="images/sundae.png" alt="sundae">
-                    <h3>SUNDAES</h3>
-                </div>
-                <div class="iteam">
-                    <img src="images/cake.png" alt="cakes">
-                    <h3>CAKES</h3>
-                </div>
-            </section>
-        </main>
-    </div>
+    <main>
+        <div class="banner">
+            <div class="b-text">
+                <div class="bt"><a href="menu.html" class="all">All</a></div>
+                <div class="bt"><a href="treats.html" class="treats">TREATS</a></div>
+                <div class="bt"><a href="spooning.html" class="spooning">SPOONING</a></div>
+                <div class="bt"> <a href="sundaes.html" class="sundaes">SUNDAES</a></div>
+                <div class="bt"><a href="cone.html" class="cone">CONE</a></div>
+                <div class="bt"><a href="cakes.html" class="cakes">CAKES</a></div>
+            </div>
+        </div>
+
+        <div class="featured">
+
+            <div class="iteam img">
+                <img class="iteam" src="images/treats.png" alt="treats">
+                <h3>TREATS</h3>
+            </div>
+            <div class="iteam img">
+                <img class="iteam" src="images/Bcake.png" alt="brithday cake">
+                <h3>BRIGHTDAY CAKES</h3>
+            </div>
+            <div class="iteam img">
+                <img class="iteam" src="images/spooning.png" alt="spooning">
+                <h3>SPOONING</h3>
+            </div>
+            <div class="iteam img">
+                <img class="iteam" src="images/cone.png" alt="cone">
+                <h3>CONE</h3>
+            </div>
+            <div class="iteam img">
+                <img class="iteam" src="images/sundae.png" alt="sundae">
+                <h3>SUNDAES</h3>
+            </div>
+            <div class="iteam img">
+                <img class="iteam" src="images/cake.png" alt="cakes">
+                <h3>CAKES</h3>
+            </div>
+
+        </div>
+    </main>
+
 
 
     <footer>
         <div class="container">
-            <div class="fset">
-                <h3>Business hours</h3>
-                <p>Mon-Fri 11-11</p>
-                <p>Sat-Sun 9-10</p>
+            <div class="f">
+                <div class="fset">
+                    <h4>Business hours</h4>
+                    <p>Mon-Fri 11-11</p>
+                    <p>Sat-Sun 9-10</p>
+                </div>
+                <div class="fset">
+                    <h4>Find Location</h4>
+                    <input class="search" type="text" placeholder="Search" name="search">
+                    <button class="btn go" type="submit">GO</button>
+                </div>
             </div>
-            <div class="fset">
-                <h3>Find Location</h3>
-                <input class="search" type="text" placeholder="Search" name="search">
-                <button class="btn go" type="submit">GO</button>
-            </div>
-            <div class="fset icons">
+
+            <div class="icons">
                 <div class="block">
                     <img src="images/icons/facebook.svg" alt="facebook" />
                 </div>
@@ -120,6 +125,7 @@
             <div>
                 <p class="copyright">&copy;Copyright MOODICECREAM, 2021</p>
             </div>
+
         </div>
     </footer>
 
