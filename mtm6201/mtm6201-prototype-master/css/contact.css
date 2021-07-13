@@ -265,14 +265,15 @@ footer .container {
     a:hover {
         width: 100%;
         background-color: #C78174;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        font-size: 1.5rem;
-        font-weight: 700;
-        margin: 0.3rem;
+        padding: 0.5rem;
+        margin: 3%;
         /*5px*/
         color: #FFFFFF;
+        transform: scale(1.1);
+        border-radius: 0.688rem;
+        box-shadow: rgb(8, 8, 8) 0 0px 20px -1px;
     }
+    
 
     .nav {
         width: 85%;

@@ -1,74 +1,91 @@
+/* Keep the size of all boxes unaffected by the padding*/
 * {
     box-sizing: border-box;
 }
 
+/* Set all font - all parts that have not been reset */
 body {
     font-family: 'Roboto', sans-serif, Arial, Helvetica;
     font-size: 1rem;
     /*16px */
 }
 
+/* Sets the color, size of the header */
 header {
     background-color: #FFFFFF;
     width: 100%;
     height: auto;
 }
 
+/* set container - background color and prosition except for the banner */
 .container {
     width: 100%;
     /* Center Container */
     margin: 0 auto;
     padding-top: 5%;
     padding-left: 8%;
+    /*property to set 3% values the thickness of the padding area. */
     padding-bottom: 3%;
     background-color: #E5E6E7;
 }
 
-
+/* set logo img values the thickness of the margin area */
 .logo {
     margin: 1rem;
     /*16px */
 }
 
+/* navgeation list attribute  */
 li {
     width: 100%;
     font-size: 0.5rem;
+    /*Remove the dots from the list*/
     list-style: none;
     margin: 0 auto;
+    /* text in the center */
     text-align: center;
 }
 
+/* Setting navgetion link Styles */
 a {
     width: 100%;
+    /* There are no styles, such as removing underscores */
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     color: black;
     margin: 0 auto;
     font-weight: 700;
 }
 
+/*Styles when mouse stay over the link  */
 a:hover {
     width: 100%;
     background-color: #C78174;
     padding: 0.5rem;
     margin: 3%;
-    /*5px*/
+    /* text color */
     color: #FFFFFF;
-    transform: scale(1.5);
+    /* change biger  */
+    transform: scale(1.01);
+    /* Rounded corners */
     border-radius: 0.688rem;
+    /*Set the shadow color and Angle  */
     box-shadow: rgb(8, 8, 8) 0 0px 20px -1px;
 }
 
 .login {
+    width: 100%;
     display: inline;
 }
 
+/* set all buttons stlye */
 .btn {
     background-color: #804A40;
     color: #FFFFFF;
     width: max-content;
     height: auto;
     border: none;
+    /* text center */
     text-align: center;
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
@@ -81,6 +98,7 @@ a:hover {
     margin: 0 auto;
 }
 
+/* banner style like color */
 .banner {
     background-color: #C78174;
     width: 100%;
@@ -89,6 +107,7 @@ a:hover {
     margin-bottom: 0%;
 }
 
+/* banner image size and position */
 .b-img {
     width: 80%;
     margin-top: 10%;
@@ -96,6 +115,7 @@ a:hover {
     margin-right: 10%;
 }
 
+/* h1 is using in banner and try new section */
 h1 {
     font-family: 'Roboto', sans-serif, Arial, Helvetica;
     font-size: 2.5rem;
@@ -105,6 +125,7 @@ h1 {
     text-align: center;
 }
 
+/* banner p property */
 .b p {
     color: #FFFFFF;
     text-align: center;
@@ -113,6 +134,7 @@ h1 {
     font-weight: 500;
 }
 
+/* h2 is using in FEATURED and trynew */
 h2 {
     font-size: 1.625rem;
     /*26px*/
@@ -120,15 +142,20 @@ h2 {
     margin-left: 10%;
 }
 
+/* Set the animation trajectory */
 @keyframes wave{
     from { transform: none; }
+    /* change bigger */
     to { transform: scale(1.8); 
     }
   }
 
+/* banner button-"order now" use the wave animation */
 .b .btn{
   animation-name: wave;
+  /*2s length of time that an animation takes to complete one cycle. */
   animation-duration: 2s;
+  /* keep moving and never stop */
   animation-iteration-count: infinite;
 }
 
@@ -136,11 +163,13 @@ h2 {
     margin-bottom: 8%;
 }
 
-.iteam:hover{
+/* set for featured img - when mouse stay over the class i */
+.i:hover{
     transform: scale(1.05);
     box-shadow: rgb(8, 8, 8) 0 0px 20px -1px;
 }
 
+/* set all product backgroud image */
 .treats,
 .b-cake,
 .spooning,
@@ -149,18 +178,21 @@ h2 {
 .cone2 {
     width: 90%;
     height: 90%;
+    /*setting most background properties at the same place in the style sheet. */
     background: url(../images/small-bg.jpg) no-repeat;
     background-size: cover;
     padding-bottom: 5%;
     border-radius: 1rem;
 }
 
+/* TRY OUR NEW PRODUCT image part */
 .new1,
 .new2 {
     width: 90%;
     background-color: #FFFFFF;
 }
 
+/* TRY OUR NEW PRODUCT text  block part */
 .chocolate,
 .yogurt {
     width: 90%;
@@ -171,6 +203,7 @@ h2 {
 
 }
 
+/*TRY OUR NEW PRODUCT text style  */
 .chocolate p,
 .yogurt p {
     color: #FFFFFF;
@@ -180,15 +213,18 @@ h2 {
     font-weight: 500;
 }
 
+/*Arrange the four TRY OUR NEW PRODUCT blocks in a column  */
 .try {
     display: flex;
     flex-direction: column;
 }
 
+/* move the third one position up*/
 .try .new:nth-child(3) {
     order: 3;
 
 }
+
 
 footer .container {
     background-color: #C78174;
@@ -203,6 +239,7 @@ h3 {
     margin-bottom: 0.5rem;
 }
 
+/* set input and buttons style  */
 input,
 .go,
 .search {
@@ -213,7 +250,7 @@ input,
     border-radius: 0.5rem;
     display: inline;
 }
-
+/* reset input width */
 input {
     width: 85%;
 }
@@ -227,6 +264,7 @@ input {
     margin-left: 0.5rem;
 }
 
+/* Arrange the 4 ICONS in a row */
 .icons {
     display: flex;
     /*aligns the flexible container's items 
@@ -239,11 +277,13 @@ input {
 
 }
 
+/* set all block in the icon class */
 .icons .block {
     margin: 1.5rem;
 
 }
 
+/* set copyright position */
 .copyright {
     display: flex;
     justify-content: center;
@@ -251,15 +291,21 @@ input {
     /*18px*/
 }
 
+/* nav class is the header bar */
 .nav {
     width: 85%;
     margin: 0 auto;
+    /* Displays an element as a block-level grid container */
     display: grid;
+    /* Specifies the size(s) of the columns and rows, 6 is 6columns 1fr is size of each */
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    /* Aligns flex items along the cross axis of the current line of the flex container. 
+        there we use center to center all elements*/
     align-items: center;
 }
 
+/*set first block size, first block is "logo image"  */
 .nav .block:nth-child(1) {
     width: 100%;
     grid-column: 1/2;
@@ -267,12 +313,14 @@ input {
     margin-left: 0%;
 }
 
+/* set second block size, second block is "search" */
 .nav .block:nth-child(2) {
     width: 100%;
     grid-column: 4/7;
     grid-row: 1/2;
 }
 
+/* set last block size, last block is "link ilst" */
 .nav .block:nth-child(3) {
     width: 100%;
     grid-column: 3/5;

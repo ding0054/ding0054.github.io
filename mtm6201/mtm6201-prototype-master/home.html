@@ -17,16 +17,20 @@
 </head>
 
 <body>
+        <!-- Divided into three blocks, easy to change the position of the block -->
         <header class="nav">
+            <!-- block 1  logo image-->
             <div>
                 <img class="block logo" src="images/logo.png" alt="logo">
             </div>
 
+            <!-- block 2 -->
             <div class="block login">
                 <input class="input-search" type="text" placeholder="Search" name="search">
                 <button class="btn search" type="submit"><i class="fas fa-search"></i></button>
             </div>
 
+            <!-- block 3 -->
             <div class="block">
                 <ul>
                     <li>
@@ -44,55 +48,68 @@
                 </ul>
             </div>
         </header>
+        <!-- End header -->
 
+        <!-- Divided into three blocks, easy to change the position of the block.They are banner, featured, and try -->
         <main>
             
+            <!-- banner divided into three parts，easy to change the position of the each part.-->
             <section class="banner">
+                <!-- NO.1-img part -->
                 <div class="b">
                     <img class="b b-img" src="images/banner.jpg" alt="banner">
                 </div>
+                <!-- NO.2-text -->
                 <div class="b">
                     <h1>Summer Offer! </h1>
                     <p>Try new flavors <br>
                         new products 25% OFF!!</p>
                 </div>
+                <!-- NO.3 button -->
                 <div class="b btn">
                     <input type="submit" class="btn order" value="Order Now">
                 </div>
             </section>
+            <!-- end banner -->
 
+            <!-- container for setting the background color, except for the banner -->
             <div class="container">
-
+            <!-- featured divided into many parts, using for grid -->
             <section>
                 <h2>FEATURED</h2>
                 <div class="featured">
                 <div class="iteam">
-                    <img class="iteam treats" src="images/treats.png" alt="treats">
+                    <img class="iteam i treats" src="images/treats.png" alt="treats">
                 </div>
                 <div class="iteam">
-                    <img  class="iteam b-cake" src="images/Bcake.png" alt="brithday cake">
+                    <img  class="iteam i b-cake" src="images/Bcake.png" alt="brithday cake">
                 </div>
                 <div class="iteam">
-                    <img  class="iteam spooning" src="images/spooning.png" alt="spooning">
+                    <img  class="iteam i spooning" src="images/spooning.png" alt="spooning">
                 </div>
                 <div class="iteam">
-                    <img class="iteam cone" src="images/cone.png" alt="cone">
+                    <img class="iteam i cone" src="images/cone.png" alt="cone">
                 </div>
                 <div class="iteam">
-                    <img class="iteam sundae" src="images/sundae.png" alt="sundae">
+                    <img class="iteam i sundae" src="images/sundae.png" alt="sundae">
                 </div>
                 <div class="iteam">
-                    <img class="iteam cone2" src="images/cone2.png" alt="cone2">
+                    <img class="iteam i cone2" src="images/cone2.png" alt="cone2">
                 </div>
-            </div>
+                </div>
             </section>
+            <!-- end featured -->
+            
 
+            <!-- try divided into 4 parts, using for grid -->
             <section class="trynew">
                 <h2>TRY OUR NEW PRODUCT</h2>
                 <div class="try">
+                <!-- 1. first img -->
                 <div>
                     <img class="new new1" src="images/try-new1.png" alt="try-new1">
                 </div>
+                <!-- 2. text -->
                 <div class="new yogurt">
                     <h1>Yogurt Ice Cream</h1>
                     <p>Hold in the palm, <br>
@@ -100,6 +117,7 @@
                     <div class="btn">
                     <input type="submit" class="btn order" value="Order Now"></div>
                 </div>
+                <!-- 3. text -->
                 <div class="new chocolate">
                     <h1>The Infinite Chocolate</h1>
                     <p>
@@ -109,56 +127,69 @@
                     <div class="btn">
                     <input type="submit" class="btn order" value="Order Now"></div>
                 </div>
+                <!-- 4. img -->
                 <div>
                     <img class="new new2" src="images/try-new2.png" alt="try-new2">
                 </div>
                 </div>
             </section>
-        </div>
+            <!-- end try -->
+            </div>
+            <!-- end container-->
+
         </main>
-    
+        <!-- end main -->
 
-
+    <!-- The footer is divided into four parts :1.hours 2.Location 3.icons 4.copyright-->
     <footer>
+        <!-- set footer container style -->
         <div class="container">
+            <!-- Group hours and Location together for typesetting  -->
             <div class="f">
-            <div class="fset">
-                <h3>Business hours</h3>
-                <p>Mon-Fri 11-11</p>
-                <p>Sat-Sun 9-10</p>
+                <!--1.hours  -->
+                <div class="fset">
+                    <h3>Business hours</h3>
+                    <p>Mon-Fri 11-11</p>
+                    <p>Sat-Sun 9-10</p>
+                </div>
+                <!-- 2.Location -->
+                <div class="fset">
+                    <h3>Find Location</h3>
+                    <input class="search" type="text" placeholder="Search" name="search">
+                    <button class="btn go" type="submit">GO</button>
+                </div>
             </div>
-            <div class="fset">
-                <h3>Find Location</h3>
-                <input class="search" type="text" placeholder="Search" name="search">
-                <button class="btn go" type="submit">GO</button>
+            <!-- end 1 & 2 -->
+
+            <!-- 3.icons divided into four block-->
+            <div class="icons">
+                <div class="block">
+                    <img src="images/icons/facebook.svg" alt="facebook" />
+                </div>
+
+                <div class="block">
+                    <img src="images/icons/instagram.svg" alt="instagram" />
+                </div>
+
+                <div class="block">
+                    <img src="images/icons/twitter.svg" alt="twitter" />
+                </div>
+
+                <div class="block">
+                    <img src="images/icons/linkedin.svg" alt="linkedin" />
+                </div>
             </div>
+            <!-- end icons -->
+            
+            <!-- 4.copyright -->
+            <div>
+                <p class="copyright">&copy;Copyright MOODICECREAM, 2021</p>
+            </div>
+            <!-- end copyright -->
         </div>
-
-        <div class="icons">
-            <div class="block">
-                <img src="images/icons/facebook.svg" alt="facebook" />
-            </div>
-
-            <div class="block">
-                <img src="images/icons/instagram.svg" alt="instagram" />
-            </div>
-
-            <div class="block">
-                <img src="images/icons/twitter.svg" alt="twitter" />
-            </div>
-
-            <div class="block">
-                <img src="images/icons/linkedin.svg" alt="linkedin" />
-            </div>
-        </div>
-        
-        <div>
-            <p class="copyright">&copy;Copyright MOODICECREAM, 2021</p>
-        </div>
-
-        </div>
+        <!-- container -->
     </footer>
-
+    <!-- end footer -->
 </body>
 
 </html>
