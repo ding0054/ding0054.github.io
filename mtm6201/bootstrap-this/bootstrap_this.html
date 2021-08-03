@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Bootstrap This！</title>
+</head>
+
+<body>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+  <div class="container m-auto mb-lg-5">
+    <!-- **************************nav***************************************** -->
+    <div class="row">
+      <nav class="col navbar navbar-expand-lg navbar-light mb-4" style="background-color: #b6a279;" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#navbar">Bootstrap</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#bootstrap">Introduction</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#benefits">Benefits</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#components" tabindex="-1">Components</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#examples" tabindex="-1">Examples</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-dark" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+    <!-- ********************Bootstrap Tutorial********************** -->
+    <div class="row">
+      <div class="col container rounded bg-secondary text-white py-lg-4 m-auto " id="bootstrap">
+        <div class="jumbotron">
+          <h1 class="text-center">Bootstrap Tutorial</h1>
+          <p><strong>What is Bootstrap?</strong> Bootstrap is the most popular CSS Framework for developing responsive
+            and
+            mobile-first websites.
+            Bootstrap 5 is the newest version of Bootstrap.</p>
+          <hr>
+          <p>Design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end
+            open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt
+            components, and powerful JavaScript plugins.</p>
+          <h1 class="text-center">How to ues</h1>
+          <p><strong>CSS</strong> Copy-paste the stylesheet &#60;link&#62; into your &#60;head&#62; before all other
+            stylesheets to load our CSS.</p>
+
+          <hr>
+          <p>&#60;link href=&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css&#34;
+            rel=&#34;stylesheet&#34;
+            integrity=&#34;sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC&#34;
+            crossorigin=&#34;anonymous&#34;&#62;</p>
+          <button type="button" class="btn btn-light btn-lg m-3">Read more</button>
+        </div><!-- end jumbotron -->
+      </div><!-- end container -->
+    </div>
+
+    <!-- ********************Bootstrap Benefits********************** -->
+    <div class="row">
+      <div class="col" id="benefits">
+        <h1 class="text-center m-4">Most Benefits of Bootstrap</h1>
+        <div class="container px-lg-3">
+          <ol class="list-group list-group-numbered">
+            <li class="list-group-item p-3 border bg-light"><strong>Across devices, across browsers:</strong>Compatible
+              with all modern browsers.</li>
+            <li class="list-group-item "><strong>Responsive Layout:</strong>Bootstrap provides a responsive,
+              mobile-first
+              streaming grid system. It can adjust the page to the user's screen size to make it look good on all sizes.
+            </li>
+            <li class="list-group-item p-3 border bg-light"><strong>CSS modular:</strong>Many CSS classes are
+              pre-defined
+              in bootstrap. When using the class, you can directly assign the corresponding class name, such as
+              text-left,text-align,.table, etc </li>
+            <li class="list-group-item"><strong>Built-in JavaScript plug-in:</strong>Bootstrap relies on JQuery because
+              it
+              provides a variety of useful JQuery plugins that allow developers to implement common effects on the WEB.
+            </li>
+            <li class="list-group-item p-3 border bg-light"><strong>Rich components:</strong>Bootstrap provides a
+              variety
+              of useful components, including navigation, tabs, toolbars, buttons, etc.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ********************Components********************** -->
+    <div class="row">
+      <div class="col" id="components">
+        <h1 class="text-center m-4 mb-4">Components</h1>
+        <!-- add grid container-->
+        <div class="container px-4 border bg-light">
+          <!-- #1 row -->
+          <div class="row">
+            <div class="col">
+              Name
+            </div>
+            <div class="col">
+              Introduction
+            </div>
+            <div class="col">
+              How to use
+            </div>
+          </div><!-- end #1 row -->
+          <hr>
+          <!-- #2 row -->
+          <div class="row">
+            <div class="col">
+              Accordion
+            </div>
+            <div class="col">
+              Build vertically collapsing accordions in combination with our Collapse JavaScript plugin.
+            </div>
+            <div class="col">
+              The accordion uses collapse internally to make it collapsible. To render an accordion that’s expanded, add
+              the .open class on the .accordion.
+            </div>
+          </div><!-- end #2 row -->
+          <hr>
+
+          <!-- #3 row -->
+          <div class="row">
+            <div class="col">
+              Collapse
+            </div>
+            <div class="col">
+              Toggle the visibility of content across your project with a few classes and our JavaScript plugins.
+            </div>
+            <div class="col">
+              The collapse JavaScript plugin is used to show and hide content. Buttons or anchors are used as triggers
+              that are mapped to specific elements you toggle. Collapsing an element will animate the height from its
+              current value to 0. Given how CSS handles animations, you cannot use padding on a .collapse element.
+              Instead, use the class as an independent wrapping element.
+            </div>
+          </div><!-- end #3 row -->
+          <hr>
+
+          <!-- #4 row -->
+          <div class="row">
+            <div class="col">
+              List group
+            </div>
+            <div class="col">
+              List groups are a flexible and powerful component for displaying a series of content. Modify and extend
+              them
+              to support just about any content within.
+            </div>
+            <div class="col">
+              <strong>Disabled items</strong> Add .disabled to a .list-group-item to make it appear disabled. Note that
+              some elements with .disabled will also require custom JavaScript to fully disable their click events
+              (e.g.,
+              links).
+            </div>
+          </div><!-- end #4 row -->
+
+        </div>
+        <!--end grid container -->
+      </div>
+    </div>
+
+    <!-- ********************Examples********************** -->
+    <div class="row">
+      <div class="col m-4 mb-4" id="examples">
+        <h1 class="text-center m-4 mb-4">Examples</h1>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="images/button1.JPG" class="d-block w-100" alt="button1">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Block button</h5>
+                <p>For example, for a half-width “block button”, use .col-6. Center it horizontally with .mx-auto, too.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="images/input.JPG" class="d-block w-100" alt="input">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Sizing Input</h5>
+                <p>Add the relative form sizing classes to
+                  the .input-group itself and contents within will automatically
+                  resize—no need for repeating the form control size classes on each element.</p>
+              </div>
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <footer class="col">
+        <p>&copy;Copyright XiaoyuDing, 2020.08.03</p>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>
