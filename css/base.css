@@ -1,4 +1,10 @@
-.container-main{
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.125rem;
+}
+
+main{
     background-color: whitesmoke;
     width: 85%;
     margin: 0 auto;
@@ -34,4 +40,8 @@ footer{
     justify-content: center;
     font-size: 1.125rem;
     /*18px*/
+}
+
+button{
+    font-size: 1.125rem;
 }
