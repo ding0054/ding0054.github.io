@@ -1,0 +1,50 @@
+.cf {
+    width: 85%;
+    margin: 0 auto;
+    padding: 1rem;
+    /* Attaches one drop-shadows to the box with color and angle. */
+    box-shadow: rgba(187, 187, 187, 1) 0 0px 20px -1px;
+    -webkit-box-shadow: rgb(126, 126, 126) 0 0px 20px -1px;
+    /* Set the border to rounded corners*/
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    
+}
+
+.btn{
+    background-color: black;
+    width: 100%;
+    color: #ffffff;
+    border-radius: 0.7rem;
+}
+.form-iteam input,
+.form-iteam textarea {
+    background-color:gainsboro;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.form-iteam input{
+    width: 100%;
+}
+.form-iteam textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.box-1{
+    margin-top: 3%;
+}
+
+.box-2 {
+    margin: 0 auto;
+    width: 85%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    border-radius: 1rem;
+}
+iframe{
+    width: 100%;
+}

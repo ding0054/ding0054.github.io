@@ -1,3 +1,37 @@
-html{
-    background-color: blue;
+.container-main{
+    background-color: whitesmoke;
+    width: 85%;
+    margin: 0 auto;
+}
+
+footer{
+    background-color:#457373;
+}
+
+/* Arrange the 4 ICONS in a row */
+.icons {
+    display: flex;
+    /*aligns the flexible container's items 
+        Items are positioned in the center of the container */
+    justify-content: center;
+    /*align the items vertically. 
+        Items are positioned at the end of the container */
+    align-items: flex-end;
+    margin-top: 3%;
+
+}
+
+/* set all block in the icon class */
+.icons .block {
+    margin: 1.5rem;
+
+}
+
+/* set copyright position */
+.copyright {
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.125rem;
+    /*18px*/
 }

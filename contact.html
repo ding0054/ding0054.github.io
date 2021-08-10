@@ -26,7 +26,7 @@
 
     <!-- own style -->
     <link rel="stylesheet" href="css/base.css">
-
+    <link rel="stylesheet" href="css/contact.css">
 
     <title>Xiaoyu Ding Portfolio</title>
 </head>
@@ -55,8 +55,45 @@
     </header>
 
     <main>
-     
 
+        <div class="m">
+            <div class="box box-1">
+
+                <!-- There are many DIV elements in the table for convenient typesetting in CSS -->
+                <form class="cf">
+                    <h1>Contact US</h1>
+
+                    <div class="form-iteam">
+
+                        <div class="f-i"><input type="text" id="input-fname" placeholder="First name"></div>
+                        <!-- f3 -->
+                        <div class="f-i"><input type="text" id="input-lname" placeholder="Last name"></div>
+                        <!-- f4 -->
+                        <div class="f-i">
+                            <textarea class="textarea" name="message" id="message" placeholder="message"></textarea>
+                        </div>
+
+                        <div class="f-i">
+                            <button Class="btn send" id="send" type="button">SEND</button>
+                        </div>
+                    </div>
+                </form><!-- end of form -->  
+            </div><!-- end of box-1 -->
+
+            <div class="box box-2">
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5607.915258700108!2d-75.75914377318216!3d45.349667566398914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0722395fc63d%3A0x35c46b5ff47a522!2sAlgonquin%20College%2C%201385%20Woodroffe%20Ave%2C%20Nepean%2C%20ON%20K2G%203G7!5e0!3m2!1szh-CN!2sca!4v1617743562529!5m2!1szh-CN!2sca"
+                        height="400" style="border: none;">
+                    </iframe>
+                </div><!-- end location -->
+                
+                <div class="map">
+                    <button Class="btn map" id="map" type="button">Go To Map</button>
+                </div>
+            </div><!-- end box-2 -->
+
+        </div> <!-- end container-main -->
     </main>
 
     <footer>
