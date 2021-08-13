@@ -49,9 +49,14 @@ h2 {
 }
 
 main img {
-    border-radius: 5rem;
+    border-radius: 2rem;
     margin: 1rem;
 
+}
+
+.a,
+.b {
+    width: 100%;
 }
 
 
