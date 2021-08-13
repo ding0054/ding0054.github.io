@@ -1,55 +1,108 @@
-  /* ******set grid mode for protfolio page*********** */
-  .p-container{
-    width: 90%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(2,1fr);
-    grid-template-areas:
-    "one one one two two two"
-    "three three four four five five"
-     ;
-}
+  .project {
+      background-color: #457373;
+      margin-bottom: 3rem;
+      height: auto;
+  }
 
-/* ******set project child name************ */
+ 
 
-.p-container .project:nth-child(1){
-    grid-area: one;
-}
-.p-container .project:nth-child(2){
-    grid-area: two;
-}
-.p-container .project:nth-child(3){
-    grid-area: three;
-}
-.p-container .project:nth-child(4){
-    grid-area: four;
-}
-.p-container .project:nth-child(5){
-    grid-area: five;
-}
+  img {
+      width: 100%;
+      height: auto;
+  }
 
-.btn{
-    background-color:#222;
-    width:fit-content;
-    margin-bottom: 2rem;
-    margin-left: 0.5rem;
-}
+  /****************************************************************************/
+  /*******************Tablet Styling******************************************/
+  /****************************************************************************/
 
-.btn a{
-    padding: 1rem 0.5rem 1rem 1rem;
-    
-	text-align: center;
-    text-decoration: none;
-    line-height: 3rem;
-    color:white;
-}
-.btn i{
-    margin-left: 15px;
-   
-}
+  /* Set the flat screen size of tablet */
+  @media only screen and (min-width: 768px) {
+
+      /* ******set grid mode for protfolio page*********** */
+      .p-container {
+          margin: 0 auto;
+          display: grid;
+          grid-gap: 3rem;
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+          grid-template-areas:
+              "one one two two"
+              "three three four four"
+              "five five six six"
+          ;
+      }
+
+      /* ******set project child name************ */
+
+      .p-container .project:nth-child(1) {
+          grid-area: one;
+      }
+
+      .p-container .project:nth-child(2) {
+          grid-area: two;
+      }
+
+      .p-container .project:nth-child(3) {
+          grid-area: three;
+      }
+
+      .p-container .project:nth-child(4) {
+          grid-area: four;
+      }
+
+      .p-container .project:nth-child(5) {
+          grid-area: five;
+      }
+
+      .p-container .project:nth-child(6) {
+          grid-area: six;
+      }
+
+  }
+
+  /****************************************************************************/
+  /*******************Desktop Styling******************************************/
+  /****************************************************************************/
+
+  /* Set the flat screen size of Desktop */
+  @media only screen and (min-width: 1280px) {
 
 
-img{
-    width: 100%;
-}
+      .p-container {
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: repeat(6, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          grid-template-areas:
+              "one one two two three three"
+              "four four five five six six"
+          ;
+      }
+
+      /* ******set project child name************ */
+
+      .p-container .project:nth-child(1) {
+          grid-area: one;
+      }
+
+      .p-container .project:nth-child(2) {
+          grid-area: two;
+      }
+
+      .p-container .project:nth-child(3) {
+          grid-area: three;
+      }
+
+      .p-container .project:nth-child(4) {
+          grid-area: four;
+      }
+
+      .p-container .project:nth-child(5) {
+          grid-area: five;
+      }
+
+      .p-container .project:nth-child(6) {
+          grid-area: six;
+      }
+
+  }
