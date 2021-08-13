@@ -1,13 +1,21 @@
+* {
+    box-sizing: border-box;
+}
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.125rem;
+    font-family: 'Roboto', sans-serif, Arial, Helvetica;
+    font-size: 1rem;
+    /*16px */
 }
 
 main{
     background-color: whitesmoke;
     width: 85%;
     margin: 0 auto;
+}
+
+.box{
+    margin-top: 1rem;
 }
 
 footer{
@@ -44,13 +52,41 @@ footer{
 
 button{
     font-size: 1.125rem;
+
+}
+
+.btn {
+    background-color: #222;
+    width: fit-content;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+
+.btn a {
+    padding: 1rem 0.5rem 1rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    line-height: 3rem;
+    color: white;
+}
+
+.btn i {
+    margin-left: 15px;
+
+}
+
+h1{
+    padding: 1rem;
+    font-weight: bold; 
+    font-size: 2em; 
 }
 
 h2{
-    padding-top:1rem; 
-    padding-left: 0.5rem;
-    padding-bottom: 0.8rem;
+    padding: 1rem;
     font-size: 1.5em; 
     color:#222;
     font-weight: bold; 
+}
+p{
+    padding: 1rem;
 }

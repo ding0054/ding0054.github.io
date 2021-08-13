@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8">
@@ -22,10 +23,12 @@
     <script src="https://kit.fontawesome.com/931c767dbc.js" crossorigin="anonymous"></script>
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
     <!-- own style -->
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/home.css">
 
 
     <title>Xiaoyu Ding Portfolio</title>
@@ -36,78 +39,133 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #457373;">
             <div class="container-fluid">
-              
-              <a class="navbar-brand" href="index.html"><img class="block logo" src="images/logo.png" alt="logo"></a>
 
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link" href="index.html">Home</a>
-                  <a class="nav-link" href="about.html">About</a>
-                  <a class="nav-link" href="protfolio.html">Portfolio</a>
-                  <a class="nav-link" href="contact.html">Contact</a>
+                <a class="navbar-brand" href="index.html"><img class="block logo" src="images/logo.png" alt="logo"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="protfolio.html">Portfolio</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </div>
                 </div>
-              </div>
             </div>
-          </nav>
+        </nav>
     </header>
 
     <main>
         <!-- grid box for main page-->
-        <div>
+        <div class="main">
+            <!-- box 1-->
+            <div class="box box-1">
+                <div class="name">
+                    <h1>I'm Xiaoyu Ding</h1>
+                </div>
 
-            <!-- box 1: self infor-->
-            <div>
-
+                <div class="box-t animate">
+                    <span>I'm Front End Developer.</span>
+                </div>
             </div><!-- end box 1-->
 
-            <!-- box 2: dowload resume-->
-            <div>
+            <!-- box 2: about me-->
+            <div class="box box-2">
+                <div class="a">
+                    <img class="ding" src="images/ding.PNG" alt="ding" />
+                </div>
+
+                <div class="a">
+                    <h2>About Me</h2>
+                    <p>I'm a 2nd year student student in the Interactive Media Design Program at Algonquin College. I am
+                        looking for the Web Designer job opportunity. <br>Based on my development experiences,
+                        professional skills and proactive attitude, I am certain that I can integrate myself into the
+                        team quickly, complete tasks efficiently, contribute assistance effectively and coordinate with
+                        teammates tightly.</p>
+                </div>
+
+                <div class="a btn">
+                    <a href="about.html">View More<i class="fas fa-play"></i></a>
+                </div>
+
             </div><!-- end box 2-->
 
-            <!-- box 3: go to diffent part -->
-            <div>
+            <!-- box 3: about skills -->
+            <div class="box box-3">
+                <div class="b">
+                    <img class="skills" src="images/skills.png" alt="skills" />
+                </div>
+                <div class="b">
+                    <h2>My skills</h2>
+                    <p>I'm a 2nd year student student in the Interactive Media Design Program at Algonquin College. I am
+                        looking for the Web Designer job opportunity. <br>Based on my development experiences,
+                        professional skills and proactive attitude, I am certain that I can integrate myself into the
+                        team quickly, complete tasks efficiently, contribute assistance effectively and coordinate with
+                        teammates tightly.</p>
+                </div>
+                <div class="b btn">
+                    <a href="">Dowload CV<i class="fas fa-play"></i></a>
+                </div>
             </div><!-- end box 3-->
 
-        </div><!-- end grid box for main page-->
+            <!-- box 4: about skills -->
+            <div class="box box-4">
+                <div class="c">
+                    <a href="about.html"><img src="images/about.png" alt="about"/></a>
+                </div>
 
+                <div class="c">
+                    <a href="protfolio.html"><img src="images/project.png" alt="project"/></a>
+                </div>
+
+                <div class="c">
+                    <a href="contact.html"><img src="images/contact.png" alt="contact"/></a>
+                </div>
+
+            </div><!-- end box 4-->
+
+        </div><!-- end grid box for main page-->
     </main>
 
     <footer>
         <!-- set footer container style -->
         <div class="container">
 
-          <!-- copyright -->
-          <div>
-            <p class="copyright">&copy;Xiaoyu Ding Portfolio, 2021</p>
-        </div>
-        <!-- end copyright -->
-
-        <!-- icons divided into four block-->
-        <div class="icons">
-            <div class="block">
-                <img src="images/icons/facebook.svg" alt="facebook" />
+            <!-- copyright -->
+            <div>
+                <p class="copyright">&copy;Xiaoyu Ding Portfolio, 2021</p>
             </div>
+            <!-- end copyright -->
 
-            <div class="block">
-                <img src="images/icons/instagram.svg" alt="instagram" />
-            </div>
+            <!-- icons divided into four block-->
+            <div class="icons">
+                <div class="block">
+                    <img src="images/icons/facebook.svg" alt="facebook" />
+                </div>
 
-            <div class="block">
-                <img src="images/icons/twitter.svg" alt="twitter" />
-            </div>
+                <div class="block">
+                    <img src="images/icons/instagram.svg" alt="instagram" />
+                </div>
 
-            <div class="block">
-                <img src="images/icons/linkedin.svg" alt="linkedin" />
-            </div>
-        </div><!-- end icons -->   
-    </div><!-- container -->
+                <div class="block">
+                    <img src="images/icons/twitter.svg" alt="twitter" />
+                </div>
+
+                <div class="block">
+                    <img src="images/icons/linkedin.svg" alt="linkedin" />
+                </div>
+            </div><!-- end icons -->
+        </div><!-- container -->
     </footer>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
     </script>
 </body>
+
 </html>

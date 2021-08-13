@@ -1,4 +1,4 @@
-.cf {
+.cf, .box-2{
     padding: 1rem;
     /* Attaches one drop-shadows to the box with color and angle. */
     box-shadow: rgba(187, 187, 187, 1) 0 0px 20px -1px;
@@ -6,41 +6,66 @@
     /* Set the border to rounded corners*/
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
-    
+
 }
 
-.btn{
+.btn {
     background-color: black;
     width: 100%;
     color: #ffffff;
     border-radius: 0.7rem;
 }
+
 .form-iteam input,
 .form-iteam textarea {
-    background-color:gainsboro;
+    background-color: gainsboro;
     padding: 1rem;
     border: none;
     border-radius: 1rem;
     margin-top: 1rem;
 }
 
-.form-iteam input{
+.form-iteam input {
     width: 100%;
 }
+
 .form-iteam textarea {
     width: 100%;
     margin-bottom: 1rem;
 }
-.box-1{
+
+.box-1,.box-2{
     margin-top: 3%;
-}
-
-.box-2 {
-    margin-top: 5%;
     margin-bottom: 3%;
-    border-radius: 1rem;
 }
 
-iframe{
+iframe {
     width: 100%;
+    
+}
+
+/****************************************************************************/
+/*******************Tablet Styling******************************************/
+/****************************************************************************/
+
+/* Set the flat screen size of tablet */
+@media only screen and (min-width: 768px) {
+    .m {
+        display: grid;
+        grid-gap: 3rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .m .box:nth-child(1) {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+
+    .m .box:nth-child(2) {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
 }
