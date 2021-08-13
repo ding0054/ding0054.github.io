@@ -2,9 +2,7 @@
     width: 100%;
     border-radius: 0.7rem;
 }
-.box-4{
-    width: 80%;
-}
+
 .name {
     color: #457373;
     text-align: center;
@@ -45,45 +43,134 @@
     }
 }
 
-main img{
+h2 {
+    text-align: left;
+    margin-left: 5%;
+}
+
+main img {
     border-radius: 5rem;
     margin: 1rem;
+
+}
+
+
+/****************************************************************************/
+/*******************Tablet Styling******************************************/
+/****************************************************************************/
+
+/* Set the flat screen size of tablet */
+@media only screen and (min-width: 768px) {
+
+    h2 {
+        text-align: center;
+    }
+
+    .box-2,
+    .box-3 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .box-2 .a:nth-child(1),
+    .box-3 .b:nth-child(1) {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .box-2 .a:nth-child(2),
+    .box-3 .b:nth-child(2) {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+
+
+    .box-4 {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .box-4 .c:nth-child(1) {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: center;
+    }
+
+    .box-4 .c:nth-child(2) {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .box-4 .c:nth-child(3) {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
 }
 
 /****************************************************************************/
-  /*******************Tablet Styling******************************************/
-  /****************************************************************************/
+/*******************Desktop Styling******************************************/
+/****************************************************************************/
 
-  /* Set the flat screen size of tablet */
-  @media only screen and (min-width: 768px) {
-.box-4 {
-    
-    height: auto;
-    
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-}
-  
-.box-4 .c:nth-child(1){
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-.box-4 .c:nth-child(2){
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
-.box-4 .c:nth-child(3){
-    grid-column: 3/4;
-    grid-row: 1/2;
-}
+/* Set the flat screen size of Desktop */
+@media only screen and (min-width: 1280px) {
+    .box-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .box-2 .a:nth-child(1) {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .box-2 .a:nth-child(2) {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .box-3 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .box-3 .b:nth-child(1) {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .box-3 .b:nth-child(2) {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .box-4 {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .box-4 .c:nth-child(1) {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .box-4 .c:nth-child(2) {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .box-4 .c:nth-child(3) {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
 
 }
-
-    /****************************************************************************/
-  /*******************Desktop Styling******************************************/
-  /****************************************************************************/
-
-  /* Set the flat screen size of Desktop */
-  @media only screen and (min-width: 1280px) {
-  }
