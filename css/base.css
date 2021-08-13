@@ -45,3 +45,12 @@ footer{
 button{
     font-size: 1.125rem;
 }
+
+h2{
+    padding-top:1rem; 
+    padding-left: 0.5rem;
+    padding-bottom: 0.8rem;
+    font-size: 1.5em; 
+    color:#222;
+    font-weight: bold; 
+}

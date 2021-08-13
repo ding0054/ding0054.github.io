@@ -1,0 +1,55 @@
+  /* ******set grid mode for protfolio page*********** */
+  .p-container{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas:
+    "one one one two two two"
+    "three three four four five five"
+     ;
+}
+
+/* ******set project child name************ */
+
+.p-container .project:nth-child(1){
+    grid-area: one;
+}
+.p-container .project:nth-child(2){
+    grid-area: two;
+}
+.p-container .project:nth-child(3){
+    grid-area: three;
+}
+.p-container .project:nth-child(4){
+    grid-area: four;
+}
+.p-container .project:nth-child(5){
+    grid-area: five;
+}
+
+.btn{
+    background-color:#222;
+    width:fit-content;
+    margin-bottom: 2rem;
+    margin-left: 0.5rem;
+}
+
+.btn a{
+    padding: 1rem 0.5rem 1rem 1rem;
+    
+	text-align: center;
+    text-decoration: none;
+    line-height: 3rem;
+    color:white;
+}
+.btn i{
+    margin-left: 15px;
+   
+}
+
+
+img{
+    width: 100%;
+}
