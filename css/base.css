@@ -2,24 +2,23 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif, Arial, Helvetica;
     font-size: 1rem;
     /*16px */
 }
 
-main{
-    background-color: whitesmoke;
+main {
     width: 85%;
     margin: 0 auto;
 }
 
-.box{
+.box {
     margin-top: 1rem;
 }
 
-footer{
-    background-color:#457373;
+footer {
+    background-color: #457373;
 }
 
 /* Arrange the 4 ICONS in a row */
@@ -50,7 +49,7 @@ footer{
     /*18px*/
 }
 
-button{
+button {
     font-size: 1.125rem;
 
 }
@@ -75,18 +74,19 @@ button{
 
 }
 
-h1{
+h1 {
     padding: 1rem;
-    font-weight: bold; 
-    font-size: 2em; 
+    font-weight: bold;
+    font-size: 2em;
 }
 
-h2{
+h2 {
     padding: 1rem;
-    font-size: 1.5em; 
-    color:#222;
-    font-weight: bold; 
+    font-size: 1.5em;
+    color: #222;
+    font-weight: bold;
 }
-p{
+
+p {
     padding: 1rem;
 }
