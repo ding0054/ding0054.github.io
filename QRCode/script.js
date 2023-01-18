@@ -1,13 +1,11 @@
-const $emojis = document.getElementById('emojis')
-const emojis = []
+let input = document.querySelector(".form input");
+let button = document.querySelector(".form button");
+let qrImg = document.querySelector(".qr-img img");
 
-for(let i = 127745 ; i < 127830 ; i++) {
-    emojis.push(`
-        
-         <p id="emojis" class="flex">
-           <span class="emoji">&#${i}</span><br>
-            <code class="code">${i}</code> 
-        </p>`
-    )
-}
-$emojis.innerHTML += emojis.join('') 
+button.addEventListener("click",function(){
+  let data = input.value;
+  if(data.length > 0){
+    let imgSrc = "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data="+data;
+    qrImg.src = imgSrc;
+  }
+})
